@@ -13637,3 +13637,7 @@ html .dtp .hidden {
 html .dtp .invisible {
 	visibility: hidden;
 }
+.rd-navbar-wrap {
+	display: flex;
+	justify-content: center;
+}

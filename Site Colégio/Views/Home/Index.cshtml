@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Index";
 }
 
 <!DOCTYPE html>
@@ -26,7 +26,7 @@
     </div>
     <div class="page">
         <!-- Page Header-->
-      <header class="section page-header">
+      <header class="page-header">
         <!-- RD Navbar-->
         <div class="rd-navbar-wrap">
           <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
@@ -84,7 +84,7 @@
                   </li>
                   <!--Aba Notícias-->
                   <li class="rd-nav-item">
-                    <a class="rd-nav-link" href="about-us.html">Notícias</a>
+                    <a class="rd-nav-link" asp-controller="Home" asp-action="Noticias">Notícias</a>
                   </li>
                   <!--Aba Infraestrutura-->
                   <li class="rd-nav-item dropdown">
@@ -128,9 +128,8 @@
         </div>
       </header>
       <!-- Swiper-->
-      <section class="section section-lg section-main-bunner section-main-bunner-filter text-center">
-        <div class="main-bunner-img" style="background-image: url(&quot;images/bg-bunner-2.jpg&quot;); background-size: cover;"></div>
-        <div class="main-bunner-inner">
+      <section class="section-lg section-main-bunner section-main-bunner-filter text-center">
+            <div class="main-bunner-img" style="background-image: url('images/Imagess/banner1.png'); background-size: 100% 100%; width: 1450px; height: 760px;"></div>        <div class="main-bunner-inner">
           <div class="container">
             <div class="box-default">
               <h1 class="box-default-title">Bem Vindo</h1>
@@ -147,7 +146,8 @@
               <form class="rd-form rd-mailform booking-form">
                 <div>
                   <a class="icon"><img src="~/images/Imagess/logo.png" alt="" width="50" height="50" /></a>
-                  <p class="booking-title">DISPONIBILIZAMOS ENSINO DO INFANTIL AO MÉDIO</p>                </div>
+                  <p class="booking-title">DISPONIBILIZAMOS ENSINO DO INFANTIL AO MÉDIO</p>               
+                </div>
                 <div>
                   <p class="booking-title">Infantil</p>
                 </div>

@@ -18,7 +18,7 @@ namespace Site_Colégio.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult Noticias()
         {
             return View();
         }

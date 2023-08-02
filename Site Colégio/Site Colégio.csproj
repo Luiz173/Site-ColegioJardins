@@ -11,4 +11,11 @@
     <None Include="wwwroot\js\site.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Cursos\" />
+    <Folder Include="Views\Infraestrutura\" />
+    <Folder Include="Views\Contato\" />
+    <Folder Include="Views\Quem_Somos\" />
+  </ItemGroup>
+
 </Project>

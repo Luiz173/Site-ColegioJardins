@@ -54,6 +54,46 @@
       opacity: 1;
     }
   </style>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #18244f);
+            padding: 0px; /* Increase padding to make the container slightly larger */
+            border-radius: 20px;
+            box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .image-wrapper {
+            flex: 1;
+            position: relative;
+            height: 200px; /* Height of each row */
+        }
+
+            .image-wrapper:not(:last-child) {
+                margin-right: 0px; /* Spacing between images */
+            }
+
+            .image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1px; /* To make images inside slightly rounded */
+            }
+
+        .center-image {
+            width: 200px; /* Width of the center image */
+        }
+
+            .center-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; /* Fit the entire image inside the container */
+                border-radius: 100px; /* To make image inside rounded */
+            }
+    </style>
   </head>
   <body>
     <script>
@@ -193,27 +233,25 @@
         </div>
       </section>
       <div class="bg-gray-1">
-        <section class="section-transform-top">
-          <div class="container">
-            <div class="box-booking">
-              <form class="rd-form rd-mailform booking-form">
-                <div>
-                  <a class="icon"><img src="~/images/Imagess/logo.png" alt="" width="150" height="150" /></a>
+            <section class="section-transform-top">
+                <div class="container image-container">
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/infantil.png" alt="Imagem 1" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 2" />
+                    </div>
+                    <div class="image-wrapper center-image">
+                        <img src="~/images/Imagess/logo.png" alt="Imagem 3" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 4" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/medio.png" alt="Imagem 5" />
+                    </div>
                 </div>
-                <div>
-                  <p class="booking-title">Infantil</p>
-                </div>
-                <div>
-                  <p class="booking-title">Fundamental</p>
-                </div>
-                <div>
-                  <p class="booking-title">Médio</p>
-                </div>
-                <div></div>
-              </form>
-            </div>
-          </div>
-        </section>
+            </section>
         <section class="section section-lg section-inset-1 bg-gray-1 pt-lg-0">
           <div class="container">
             <div class="row row-50 justify-content-xl-between align-items-lg-center">

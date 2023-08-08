@@ -1,6 +1,5 @@
-﻿
-@{
-    ViewData["Title"] = "NossaHistoria";
+﻿@{
+    ViewData["Title"] = "Index";
 }
 
 <!DOCTYPE html>
@@ -10,11 +9,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/Imagess/logo.png" type="images/Imagess/logo.png">
+    <link rel="icon" href="~/images/Imagess/logo.png" type="images/Imagess/logo.png">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/fonts.css">
+    <link rel="stylesheet" href="~/css/style.css">
     <style>
         .ie-panel {
             display: none;
@@ -69,6 +68,69 @@
                     opacity: 1;
                 }
     </style>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #18244f);
+            padding: 0px; /* Increase padding to make the container slightly larger */
+            border-radius: 20px;
+            box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .image-wrapper {
+            flex: 1;
+            position: relative;
+            height: 200px; /* Height of each row */
+        }
+
+            .image-wrapper:not(:last-child) {
+                margin-right: 0px; /* Spacing between images */
+            }
+
+            .image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1px; /* To make images inside slightly rounded */
+            }
+
+        .center-image {
+            width: 200px; /* Width of the center image */
+        }
+
+            .center-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; /* Fit the entire image inside the container */
+                border-radius: 100px; /* To make image inside rounded */
+            }
+    </style>
+    <style>
+        section {
+            text-align: center;
+        }
+
+        .partners-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+            .partners-section img {
+                max-width: 100%;
+                height: auto;
+                margin: 0 20px;
+            }
+    </style>
+    <style>
+        .text-left {
+            text-align: left;
+        }
+    </style>
 </head>
 <body>
     <script>
@@ -117,7 +179,7 @@
                                         Quem Somos
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Nossa História</a>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="NossaHistoria">Nossa História</a>
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Missão</a>
                                         <div class="dropdown-divider"></div>
@@ -145,13 +207,13 @@
                                         <a class="dropdown-item" href="#">Período Integral</a>
                                     </div>
                                 </li>
-                                <!--LOGO-->
-                                <li class="rd-nav-item">
-                                    <a class="rd-nav-link" href="/"><img class="brand-logo-light" src="~/images/Imagess/logo.png" alt="" width="110" height="110" srcset="~/images/Imagess/logo.png 2x" /></a>
-                                </li>
                                 <!--Aba Notícias-->
                                 <li class="rd-nav-item">
                                     <a class="rd-nav-link" asp-controller="Home" asp-action="Noticia">Notícias</a>
+                                </li>
+                                <!--LOGO-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="/"><img class="brand-logo-light" src="~/images/Imagess/logo.png" alt="" width="110" height="110" srcset="~/images/Imagess/logo.png 2x" /></a>
                                 </li>
                                 <!--Aba Infraestrutura-->
                                 <li class="rd-nav-item dropdown">
@@ -181,6 +243,10 @@
                                         <a class="dropdown-item" href="#">Trabalhe Conosco</a>
                                     </div>
                                 </li>
+                                <!--Aba Agenda EDU-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link btn btn-primary" href="#">Agenda EDU</a>
+                                </li>
                             </ul>
                             <div>
                                 <ul>
@@ -194,258 +260,151 @@
                 </nav>
             </div>
         </header>
-        <!-- Swiper-->
+        <!-- Slide de imagens-->
         <section class="section-lg section-main-bunner section-main-bunner-filter text-center">
-            <div class="main-bunner-img" style="background-image: url('images/Imagess/banner2.PNG'); background-size: 94% 90%; "></div>
+            <div class="main-bunner-img"><img src="~/images/Imagess/banner2.PNG" alt="Imagem do Banner 2" style="width: 94%; height: 90%;" /></div>
             <div class="main-bunner-inner">
                 <div class="container">
                     <div class="box-default">
-                        <h1 class="box-default-title">Bem Vindo</h1>
-                        <div class="box-default-decor"></div>
-                        <p class="big box-default-text">Aqui seu filho forma a base de um grande futuro, além de proporcionar oportunidades para seu desenvolvimento intelectual, afetivo e social.</p>
+                        <h1 class="box-default-title">Nossa História</h1>
                     </div>
                 </div>
             </div>
         </section>
+        <!--Imagens Cursos-->
         <div class="bg-gray-1">
             <section class="section-transform-top">
-                <div class="container">
-                    <div class="box-booking">
-                        <form class="rd-form rd-mailform booking-form">
-                            <div>
-                                <a class="icon"><img src="~/images/Imagess/logo.png" alt="" width="50" height="50" /></a>
-                                <p class="booking-title">DISPONIBILIZAMOS ENSINO DO INFANTIL AO MÉDIO</p>
-                            </div>
-                            <div>
-                                <p class="booking-title">Infantil</p>
-                            </div>
-                            <div>
-                                <p class="booking-title">Fundamental</p>
-                            </div>
-                            <div>
-                                <p class="booking-title">Médio</p>
-                            </div>
-                        </form>
+                <div class="container image-container">
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/infantil.png" alt="Imagem 1" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 2" />
+                    </div>
+                    <div class="image-wrapper center-image">
+                        <img src="~/images/Imagess/logo.png" alt="Imagem 3" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 4" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/medio.png" alt="Imagem 5" />
                     </div>
                 </div>
             </section>
-            <section class="section section-lg section-inset-1 bg-gray-1 pt-lg-0">
+            <!--Texto da História-->
+            <section class="section section-lg bg-gray-1">
                 <div class="container">
-                    <div class="row row-50 justify-content-xl-between align-items-lg-center">
-                        <div class="col-lg-6 wow fadeInLeft">
-                            <div class="box-image">
-                                <img class="box-image-static" src="~/images/Imagess/1.png" alt="" width="341" height="391" />
-                            </div>
+                    <div class="row row-50">
+                        <div class="col-lg-6 pr-xl-5">
+                            <img src="~/images/Imagess/DSC08499.JPG" alt="" width="518" height="434" />
                         </div>
-                        <div class="col-lg-6 col-xl-5 wow fadeInRight">
-                            <h2>Sobre Nós</h2>
-                            <p>Fundado em 1997 o Colégio Jardins cultiva o lema de que juntos Educação, Amor e Seriedade são as bases para uma formação integral do aluno em todas as dimensões, possibilitando que ele seja um agente transformador de si e da sociedade.</p>
-                            <button><img src="images/signature-1-140x50.png" alt="" width="140" height="50" /></button>
+                        <div class="col-lg-6">
+                            <h6 class="text-left" style="color: #333;">Colégio Jardin's</h6>
+                            <h2 class="text-left">Nossa História</h2>
+                            <div class="text-with-divider text-left">
+                            </div>
+                            <p class="text-left">Fundado em 1997 o Colégio Jardin's cultiva o lema de que juntos Educação, Amor e Seriedade são as bases para uma formação integral do aluno em todas as dimensões, possibilitando que ele seja um agente transformador de si e da sociedade.</p>
+                            <p class="text-left">O Colégio Jardin’s atende crianças a partir de 2 anos de idade até o Ensino Técnico. Localizado na Vila Mimosa, o Colégio possui 4 unidades onde são distribuídos de acordo com a faixa etária de cada aluno. O Colégio atende alunos divididos em 4 períodos: matutino, vespertino, semi-integral e integral. Utilizamos o sistema apostilado como material didático em nossos cursos. Oferecemos aos nossos alunos como aulas diferenciadas as seguintes atividades: teatro, recreação na piscina, informática, Kung-Fu, fanfarra, inglês, espanhol, redação, desenho geométrico, futebol, entre outros.</p>
                         </div>
                     </div>
                 </div>
             </section>
+            
+            <!--Depoimentos-->
+            <section class="parallax-container" data-parallax-img="@Url.Content("~/images/Imagess/banner2.PNG")">
+                <div class="parallax-content section-xl context-dark text-center bg-dark-filter bg-dark-filter-2">
+                    <div class="container">
+                        <h2>Depoimentos</h2>
+                        <!-- Slick Carousel-->
+                        <div class="slick-slider carousel-parent slick-style-1" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+                            <div class="item">
+                                <div class="testimonials-modern">
+                                    <div class="testimonials-modern-text">
+                                        <p>A falsis, hibrida peritus fiscina. Devatio de fortis era, talem abaculus! Urbs germanus abnoba est. Pol, a bene exemplar, victrix! Peritus verpas ducunt ad byssus. Cum historia persuadere, omnes decores.</p>
+                                    </div>
+                                    <div class="testimonials-modern-name">Joanna Smith</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonials-modern">
+                                    <div class="testimonials-modern-text">
+                                        <p>Silvas cadunt in magnum antverpia! Ubi est grandis gabalium? Trabem sapienter ducunt ad dexter hydra. Devatios sunt assimilatios de alter ignigena. Est ferox lapsus, cesaris. Cum abactus tolerare, omnes.</p>
+                                    </div>
+                                    <div class="testimonials-modern-name">James Williams</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonials-modern">
+                                    <div class="testimonials-modern-text">
+                                        <p>Pius equiso virtualiter promissios fides est. Cur absolutio peregrinatione? Decors congregabo in salvus cubiculum! Raptus, fidelis ventuss etiam prensionem de neuter, audax classis. Domesticus, camerarius aonid.</p>
+                                    </div>
+                                    <div class="testimonials-modern-name">Kate McMillan</div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonials-modern">
+                                    <div class="testimonials-modern-text">
+                                        <p>Danistas sunt cannabiss de brevis domus. Vae, domina! Brodium cresceres, tanquam ferox repressor. Glutens potus, tanquam brevis nuptia. Fraticinida, ionicis tormento, et pars. Cum bromium resistere, omnes.</p>
+                                    </div>
+                                    <div class="testimonials-modern-name">Peter Wilson</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slick-slider slider-dots" id="child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-xl-items="4" data-slide-to-scroll="1">
+                            <div class="item">
+                                <div class="slick-dot-item">
+                                    <img src="~/images/user-1-60x60.jpg" alt="" width="60" height="60" />
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slick-dot-item">
+                                    <img src="~/images/user-2-60x60.jpg" alt="" width="60" height="60" />
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slick-dot-item">
+                                    <img src="~/images/user-3-60x60.jpg" alt="" width="60" height="60" />
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="slick-dot-item">
+                                    <img src="~/images/user-4-60x60.jpg" alt="" width="60" height="60" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Page Footer-->
+            <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">
+                <div class="container wow-outer">
+                    <div class="wow fadeIn">
+                        <div class="row row-60 align-items-center">
+                            <div class="col-md-4">
+                                <a href="/"><img src="~/images/Imagess/logo.png" alt="" width="140" height="57" srcset="~/images/Imagess/logo.png 2x" /></a>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 style="color: #000; font-family: 'Material Design Icons', sans-serif;"><strong>Localização</strong></h4>
+                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 10px;">Av. Ana Beatriz Bierrembach, N° 165</h5>
+                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Vila Mimosa - Campinas/SP - 13050-060</h5>
+                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Telefones: (19) 3269-9922 / (19) 3308-7006</h5>
+                            </div>
+                            <div class="col-md-4 text-md-right">
+                                <ul class="social-list">
+                                    <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
-        <!-- Featured Offers-->
-        <section class="section section-lg bg-default">
-            <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-md-9 col-lg-7 wow-outer">
-                        <div class="wow slideInDown">
-                            <h2>Nossos Cursos</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row row-20 row-lg-30">
-                    <div class="col-md-6 col-lg-4 wow-outer">
-                        <div class="wow fadeInUp">
-                            <div class="product-featured">
-                                <div class="product-featured-figure">
-                                    <img src="~/images/Imagess/infantil.png" alt="" width="370" height="370" />
-                                    <div class="product-featured-button"><a class="button button-primary" href="#">Conheça Agora</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow-outer">
-                        <div class="wow fadeInUp">
-                            <div class="product-featured">
-                                <div class="product-featured-figure">
-                                    <img src="~/images/Imagess/fundamental.png" alt="" width="370" height="370" />
-                                    <div class="product-featured-button"><a class="button button-primary" href="#">Conheça Agora</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow-outer">
-                        <div class="wow fadeInUp">
-                            <div class="product-featured">
-                                <div class="product-featured-figure">
-                                    <img src="~/images/Imagess/medio.png" alt="" width="370" height="370" />
-                                    <div class="product-featured-button"><a class="button button-primary" href="#">Conheça Agora</a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section section-lg bg-gray-1">
-            <div class="row isotope-wrap">
-                <h2 class="text-center">Nossa Infraestrutura</h2>
-                <!-- Isotope Content-->
-                <div class="col-lg-12">
-                    <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group" data-lg-thumbnail="false">
-                        <div class="row no-gutters row-condensed">
-                            <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*">
-                                <div class="wow slideInDown">
-                                    <div class="gallery-item-classic">
-                                        <img src="images/gallery-masonry-1-640x429.jpg" alt="" width="640" height="429" />
-                                        <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-1-original.jpg" data-lightgallery="item">zoom</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3">
-                                <div class="wow slideInDown">
-                                    <div class="gallery-item-classic">
-                                        <img src="images/gallery-masonry-2-640x429.jpg" alt="" width="640" height="429" />
-                                        <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-2-original.jpg" data-lightgallery="item">zoom</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-4 isotope-item wow-outer" data-filter="Category 3">
-                                <div class="wow slideInDown">
-                                    <div class="gallery-item-classic">
-                                        <img src="images/gallery-masonry-3-640x429.jpg" alt="" width="640" height="429" />
-                                        <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-3-original.jpg" data-lightgallery="item">zoom</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3">
-                                <div class="wow fadeInUp">
-                                    <div class="gallery-item-classic">
-                                        <img src="images/gallery-masonry-4-960x429.jpg" alt="" width="960" height="429" />
-                                        <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-4-original.jpg" data-lightgallery="item">zoom</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2">
-                                <div class="wow fadeInUp">
-                                    <div class="gallery-item-classic">
-                                        <img src="images/gallery-masonry-5-960x429.jpg" alt="" width="960" height="429" />
-                                        <div class="gallery-item-classic-caption"><a href="images/gallery-masonry-5-original.jpg" data-lightgallery="item">zoom</a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section-lg bg-default">
-            <div class="container wow-outer">
-                <h2 class="text-center wow slideInDown">Recent News</h2>
-                <!-- Owl Carousel-->
-                <div class="owl-carousel wow fadeInUp" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-stage-padding="15" data-loop="false" data-margin="30" data-mouse-drag="false">
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Jul 02, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">Genuine Italian Pizza: Authenticity and Choice</a></h4>
-                        <div class="post-corporate-text">
-                            <p>As an Italian restaurant, we are very proud of our delicious authentic pizzas. Our three most popular choices are the Rustica, the Toscana and...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Jul 12, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">Italian vs. American Spaghetti: Top 5 Differences</a></h4>
-                        <div class="post-corporate-text">
-                            <p>Commonly, when we hear there is spaghetti for dinner we will be expecting a red tomato sauce with meat and seasonings poured over long...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">aug 02, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">The Delicious History of Lasagna and Its Origins</a></h4>
-                        <div class="post-corporate-text">
-                            <p>Lasagna, could there be a more perfect dish? It’s comfort food on steroids. Layers of cheese generously piled on top of decadent amounts...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Aug 15, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">Making Gelato Like a True Italian: Tips From Our Chef</a></h4>
-                        <div class="post-corporate-text">
-                            <p>Most would agree that gelato is the most delicious frozen dessert; the perfect ending to any meal. With origins in Sicily, gelato has been made famous...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Sep 15, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">Italian Ingredients You Can Easily Grow at Home</a></h4>
-                        <div class="post-corporate-text">
-                            <p>Imagine preparing an Italian dinner but having to stop cooking because you forget an ingredient and must run to the store. How nice would it be to go...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Sep 28, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">Our Brief Guide to Pairing Wine and Pasta the Right Way</a></h4>
-                        <div class="post-corporate-text">
-                            <p>To Italians, pasta is the food of the gods, and there is nothing better to go with a good pasta than a perfect wine. To the uninitiated, finding the right...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Oct 05, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">Top 10 Famous Spring Dishes in Italian Restaurants</a></h4>
-                        <div class="post-corporate-text">
-                            <p>Spring is the time for growth and rebirth. One can see this throughout the countrysides of Italy with blooming flowers and budding trees. Springtime is...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Oct 17, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">What Makes Some Seasonings Truly Italian?</a></h4>
-                        <div class="post-corporate-text">
-                            <p>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                    <div class="post-corporate">
-                        <a class="badge" href="#">Nov 10, 2019</a>
-                        <h4 class="post-corporate-title"><a href="#">Types of Italian Sausage and Why They Are Different</a></h4>
-                        <div class="post-corporate-text">
-                            <p>There are many types of Italian sausage. The main difference in Italian sausage when compared to other sausages is the seasoning. The particular...</p>
-                        </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Page Footer-->
-        <footer class="section footer-minimal context-dark">
-            <div class="container wow-outer">
-                <div class="wow fadeIn">
-                    <div class="row row-60">
-                        <div class="col-12"><a href="index.html"><img src="images/logo-default1-140x57.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x" /></a></div>
-                        <div class="col-12">
-                            <ul class="footer-minimal-nav">
-                                <li><a href="#">Menu</a></li>
-                                <li><a href="#">Blog</a></li>
-                                <li><a href="contacts.html">Contacts</a></li>
-                                <li><a href="#">Gallery</a></li>
-                                <li><a href="about-us.html">About</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-12">
-                            <ul class="social-list">
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-facebook" href="#"></a></li>
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-instagram" href="#"></a></li>
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-twitter" href="#"></a></li>
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-youtube-play" href="#"></a></li>
-                                <li><a class="icon icon-sm icon-circle icon-circle-md icon-bg-white fa-pinterest-p" href="#"></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <p class="rights"><span>&copy;&nbsp; </span><span class="copyright-year"></span><span>&nbsp;</span><span>Pesto</span><span>.&nbsp;</span><span>All Rights Reserved.</span><span>&nbsp;</span><a href="#">Privacy Policy</a>. Design&nbsp;by&nbsp;<a href="https://www.templatemonster.com">Templatemonster</a></p>
-                </div>
-            </div>
-        </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="~/js/core.min.js"></script>
+    <script src="~/js/script.js"></script>
 </body>
 </html>

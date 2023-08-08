@@ -9,11 +9,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="icon" href="images/Imagess/logo.png" type="images/Imagess/logo.png">
+    <link rel="icon" href="~/images/Imagess/logo.png" type="images/Imagess/logo.png">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/fonts.css">
+    <link rel="stylesheet" href="~/css/style.css">
     <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
     <style>
     .rd-navbar {
@@ -111,6 +111,11 @@
                 height: auto;
                 margin: 0 20px;
             }
+    </style>
+    <style>
+        .text-left {
+            text-align: left;
+        }
     </style>
   </head>
   <body>
@@ -243,7 +248,7 @@
       </header>
       <!-- Slide de imagens-->
       <section class="section-lg section-main-bunner section-main-bunner-filter text-center">
-        <div class="main-bunner-img" style="background-image: url('images/Imagess/banner2.PNG'); background-size: 94% 90%; "></div>       
+        <div class="main-bunner-img"><img src="~/images/Imagess/banner2.PNG" alt="Imagem do Banner 2" style="width: 94%; height: 90%;" /></div>       
         <div class="main-bunner-inner">
           <div class="container">
             <div class="box-default">
@@ -284,17 +289,20 @@
                         </div>
                         <div class="col-lg-6">
                             <h2>Sobre Nós</h2>
-                            <div class="text-with-divider">
+                            <div class="text-with-divider text-left">
                                 <div class="divider"></div>
                                 <h4>Oferecemos um grande aprendizado em um ambiente amigável e tranquilo.</h4>
                             </div>
-                            <p>Fundado em 1997 o Colégio Jardins cultiva o lema de que juntos Educação, Amor e Seriedade são as bases para uma formação integral do aluno em todas as dimensões, possibilitando que ele seja um agente transformador de si e da sociedade.</p>
+                            <p class="text-left">Fundado em 1997 o Colégio Jardin's cultiva o lema de que juntos Educação, Amor e Seriedade são as bases para uma formação integral do aluno em todas as dimensões, possibilitando que ele seja um agente transformador de si e da sociedade.</p>
                             <br />
-                            <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            <div style="text-align: left;">
+                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
+
             <!--Diferencial-->
             <section class="section section-lg bg-white">
                 <div class="container">
@@ -395,36 +403,36 @@
               <div class="row no-gutters row-condensed">
                  <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3">
                   <div class="wow fadeInUp">
-                    <div class="gallery-item-classic"><img src="images/Imagess/DSC08499.JPG" alt="" width="960" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="images/Imagess/DSC08499.JPG" data-lightgallery="item">zoom</a></div>
+                    <div class="gallery-item-classic"><img src="~/images/Imagess/DSC08499.JPG" alt="" width="960" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="~/images/Imagess/DSC08499.JPG" data-lightgallery="item">zoom</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2">
                   <div class="wow fadeInUp">
-                    <div class="gallery-item-classic"><img src="images/Imagess/PredioFrentePraça.JPG" alt="" width="960" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="images/Imagess/PredioFrentePraça.JPG" data-lightgallery="item">zoom</a></div>
+                    <div class="gallery-item-classic"><img src="~/images/Imagess/PredioFrentePraça.JPG" alt="" width="960" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="~/images/Imagess/PredioFrentePraça.JPG" data-lightgallery="item">zoom</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*">
                   <div class="wow slideInDown">
-                    <div class="gallery-item-classic"><img src="images/Imagess/FrenteFund1.JPG" alt="" width="640" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="images/Imagess/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
+                    <div class="gallery-item-classic"><img src="~/images/Imagess/FrenteFund1.JPG" alt="" width="640" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="~/images/Imagess/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3">
                   <div class="wow slideInDown">
-                    <div class="gallery-item-classic"><img src="images/Imagess/FrenteInfantil.JPG" alt="" width="640" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="images/Imagess/FrenteInfantil.JPG" data-lightgallery="item">zoom</a></div>
+                    <div class="gallery-item-classic"><img src="~/images/Imagess/FrenteInfantil.JPG" alt="" width="640" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="~/images/Imagess/FrenteInfantil.JPG" data-lightgallery="item">zoom</a></div>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 col-md-4 isotope-item wow-outer" data-filter="Category 3">
                   <div class="wow slideInDown">
-                    <div class="gallery-item-classic"><img src="images/Imagess/FrenteFund1.JPG" alt="" width="640" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="images/Imagess/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
+                    <div class="gallery-item-classic"><img src="~/images/Imagess/FrenteFund1.JPG" alt="" width="640" height="429"/>
+                      <div class="gallery-item-classic-caption"><a href="~/images/Imagess/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
                     </div>
                   </div>
                 </div>
@@ -476,22 +484,22 @@
                         <div class="slick-slider slider-dots" id="child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-xl-items="4" data-slide-to-scroll="1">
                             <div class="item">
                                 <div class="slick-dot-item">
-                                    <img src="images/user-1-60x60.jpg" alt="" width="60" height="60" />
+                                    <img src="~/images/user-1-60x60.jpg" alt="" width="60" height="60" />
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="slick-dot-item">
-                                    <img src="images/user-2-60x60.jpg" alt="" width="60" height="60" />
+                                    <img src="~/images/user-2-60x60.jpg" alt="" width="60" height="60" />
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="slick-dot-item">
-                                    <img src="images/user-3-60x60.jpg" alt="" width="60" height="60" />
+                                    <img src="~/images/user-3-60x60.jpg" alt="" width="60" height="60" />
                                 </div>
                             </div>
                             <div class="item">
                                 <div class="slick-dot-item">
-                                    <img src="images/user-4-60x60.jpg" alt="" width="60" height="60" />
+                                    <img src="~/images/user-4-60x60.jpg" alt="" width="60" height="60" />
                                 </div>
                             </div>
                         </div>
@@ -515,7 +523,7 @@
                     <div class="wow fadeIn">
                         <div class="row row-60 align-items-center">
                             <div class="col-md-4">
-                                <a href="index.html"><img src="images/Imagess/logo.png" alt="" width="140" height="57" srcset="images/logo-default-280x113.png 2x" /></a>
+                                <a href="/"><img src="~/images/Imagess/logo.png" alt="" width="140" height="57" srcset="~/images/Imagess/logo.png 2x" /></a>
                             </div>
                             <div class="col-md-4">
                                 <h4 style="color: #000; font-family: 'Material Design Icons', sans-serif;"><strong>Localização</strong></h4>
@@ -537,7 +545,7 @@
       </div>
     </div>
     <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
+    <script src="~/js/core.min.js"></script>
+    <script src="~/js/script.js"></script>
   </body>
 </html>

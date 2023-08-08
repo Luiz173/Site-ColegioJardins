@@ -12,12 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Views\Cursos\" />
-    <Folder Include="Views\Infraestrutura\" />
-    <Folder Include="Views\Contato\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.15" />
   </ItemGroup>
 

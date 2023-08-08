@@ -4,32 +4,33 @@ using System.Diagnostics;
 
 namespace Site_Colégio.Controllers
 {
-    public class QuemSomosController : Controller
+    public class InfraestruturaController1 : Controller
     {
-        public IActionResult NossaHistoria()
+        public IActionResult PInfantil()
         {
             return View();
         }
 
-        public IActionResult Missao()
+        public IActionResult PFundamental1()
         {
             return View();
         }
 
-        public IActionResult Proposta()
+        public IActionResult PFundamental2()
         {
             return View();
         }
 
-        public IActionResult Parceiros()
+        public IActionResult PMedio()
         {
             return View();
         }
 
-        public IActionResult Diferencial()
+        public IActionResult AreaVerde()
         {
             return View();
         }
+
 
 
     }

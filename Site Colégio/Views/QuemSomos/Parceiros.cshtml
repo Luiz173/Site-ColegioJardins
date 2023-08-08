@@ -196,15 +196,15 @@
                                         Cursos
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Ensino Infantil</a>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Infantil">Ensino Infantil</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Ensino Fundamental I</a>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Fundamental1">Ensino Fundamental I</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Ensino Fundamental II</a>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Fundamental2">Ensino Fundamental II</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Ensino Médio</a>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Medio">Ensino Médio</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Período Integral</a>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Integral">Período Integral</a>
                                     </div>
                                 </li>
                                 <!--Aba Notícias-->
@@ -221,15 +221,15 @@
                                         Infraestrutura
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Prédio Ensino Infantil</a>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PInfantil">Prédio Ensino Infantil</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Prédio Ensino Fundamental I</a>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PFundamental1">Prédio Ensino Fundamental I</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Prédio Ensino Fundamental II</a>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PFundamental2">Prédio Ensino Fundamental II</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Prédio Ensino Médio</a>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PMedio">Prédio Ensino Médio</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Área Verde</a>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="AreaVerde">Área Verde</a>
                                     </div>
                                 </li>
                                 <!--Aba Contato-->
@@ -238,9 +238,9 @@
                                         Contato
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <a class="dropdown-item" href="#">Fale Conosco</a>
+                                        <a class="dropdown-item" asp-controller="Contato" asp-action="FaleConosco">Fale Conosco</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Trabalhe Conosco</a>
+                                        <a class="dropdown-item" asp-controller="Contato" asp-action="TrabalheConosco">Trabalhe Conosco</a>
                                     </div>
                                 </li>
                                 <!--Aba Agenda EDU-->
@@ -266,7 +266,7 @@
             <div class="main-bunner-inner">
                 <div class="container">
                     <div class="box-default">
-                        <h1 class="box-default-title">Missão</h1>
+                        <h1 class="box-default-title">Nossos Parceiros</h1>
                     </div>
                 </div>
             </div>
@@ -293,17 +293,38 @@
                 </div>
             </section>
             <!--Imagem dos Parceiros-->
-            <section class="section-lg bg-default">
-                <div class="text-center">
-                    <h2>Parceiros</h2>
-                </div>
-                <div class="partners-section">
-                    <img src="~/images/Imagess/parceiros1-removebg-preview.png" alt="Parceiro 1">
-                    <img src="~/images/Imagess/parceiros2-removebg-preview.png" alt="Parceiro 2">
-                    <img src="~/images/Imagess/parceiros3-removebg-preview.png" alt="Parceiro 3">
+            <section class="section section-lg bg-white">
+                <div class="container">
+                    <h2 class="text-center">Nossos Parceiros</h2>
+                    <div class="row row-30 row-md-60">
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box-icon-modern">
+                                
+                                <div class="box-icon-caption">
+                                    <img src="~/images/Imagess/parceiros1-removebg-preview.png" />
+                                    <p>Com 30 anos de experiência, a Medicar é uma referência no segmento de Atendimento de Urgência e Emergência 24 horas com UTIs móveis e equipes médicas completas, 24 horas por dia, 7 dias por semana.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box-icon-modern">
+                                <div class="box-icon-caption">
+                                    <img src="~/images/Imagess/parceiros2-removebg-preview.png"  />
+                                    <p>Oferecemos aulas de Kung-fu para alunos da educação infantil e ensino fundamental I do período integral. As aulas incluem dinâmicas, jogos e debates dentro do conteúdo da arte marcial, visando o desenvolvimento de habilidades físicas, motoras, psicoativas e cognitivas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4">
+                            <div class="box-icon-modern">
+                                <div class="box-icon-caption">
+                                    <img src="~/images/Imagess/parceiros3-removebg-preview.png" width="200" height="200" />
+                                    <p>Fundado em 2004, o Sistema Mackenzie de Ensino visa difundir o ensino confessional cristão para professores e alunos da Educação Infantil ao Ensino Médio.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
-
             
             <!-- Page Footer-->
             <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">

@@ -141,111 +141,111 @@
     </div>
     <div class="page">
         <!-- Page Header-->
-      <header class="page-header">
-        <!-- RD Navbar-->
-        <div class="rd-navbar-wrap">
-                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true"; style="background-color: transparent;">
+        <header class="page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" ; style="background-color: transparent;">
                     <div class="rd-navbar-main-outer">
-              <div class="rd-navbar-main">
-                <!-- RD Navbar Panel-->
-                <div class="rd-navbar-panel">
-                <!-- RD Navbar Brand-->
-                    <div>
-                        <a ></a>
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Brand-->
+                                <div>
+                                    <a></a>
+                                </div>
+                            </div>
+                            <ul class="rd-navbar-nav">
+                                <!--Aba Página Incial-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="/">Página Inicial</a>
+                                </li>
+                                <!--Aba Quem Somos-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Quem Somos
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="NossaHistoria">Nossa História</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Missao">Missão</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Proposta">Proposta Pedagógica</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Parceiros">Parceiros</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Diferencial">Diferencial</a>
+                                    </div>
+                                </li>
+                                <!--Aba Cursos-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Cursos
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Infantil">Ensino Infantil</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Fundamental1">Ensino Fundamental I</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Fundamental2">Ensino Fundamental II</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Medio">Ensino Médio</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Integral">Período Integral</a>
+                                    </div>
+                                </li>
+                                <!--Aba Notícias-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" asp-controller="Home" asp-action="Noticia">Notícias</a>
+                                </li>
+                                <!--LOGO-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="/"><img class="brand-logo-light" src="~/images/Imagess/logo.png" alt="" width="110" height="110" srcset="~/images/Imagess/logo.png 2x" /></a>
+                                </li>
+                                <!--Aba Infraestrutura-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Infraestrutura
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PInfantil">Prédio Ensino Infantil</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PFundamental1">Prédio Ensino Fundamental I</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PFundamental2">Prédio Ensino Fundamental II</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PMedio">Prédio Ensino Médio</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="AreaVerde">Área Verde</a>
+                                    </div>
+                                </li>
+                                <!--Aba Contato-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Contato
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="Contato" asp-action="FaleConosco">Fale Conosco</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Contato" asp-action="TrabalheConosco">Trabalhe Conosco</a>
+                                    </div>
+                                </li>
+                                <!--Aba Agenda EDU-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link btn btn-primary" href="#">Agenda EDU</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <ul>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <ul class="rd-navbar-nav">
-                  <!--Aba Página Incial-->
-                  <li class="rd-nav-item">
-                    <a class="rd-nav-link" href="/">Página Inicial</a>
-                  </li>
-                  <!--Aba Quem Somos-->
-                  <li class="rd-nav-item dropdown">
-                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Quem Somos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" asp-controller="QuemSomos" asp-action="NossaHistoria">Nossa História</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Missao">Missão</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Proposta">Proposta Pedagógica</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Parceiros">Parceiros</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Diferencial">Diferencial</a>
-                    </div>
-                  </li>
-                  <!--Aba Cursos-->
-                  <li class="rd-nav-item dropdown">
-                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Cursos
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Ensino Infantil</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Ensino Fundamental I</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Ensino Fundamental II</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Ensino Médio</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Período Integral</a>
-                    </div>
-                  </li>
-                  <!--Aba Notícias-->
-                  <li class="rd-nav-item">
-                    <a class="rd-nav-link" asp-controller="Home" asp-action="Noticia">Notícias</a>
-                  </li>
-                   <!--LOGO-->
-                  <li class="rd-nav-item">
-                    <a class="rd-nav-link" href="/"><img class="brand-logo-light" src="~/images/Imagess/logo.png" alt="" width="110" height="110" srcset="~/images/Imagess/logo.png 2x"/></a>
-                  </li>
-                  <!--Aba Infraestrutura-->
-                  <li class="rd-nav-item dropdown">
-                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Infraestrutura
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Prédio Ensino Infantil</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Prédio Ensino Fundamental I</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Prédio Ensino Fundamental II</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Prédio Ensino Médio</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Área Verde</a>
-                    </div>
-                  </li>
-                  <!--Aba Contato-->
-                  <li class="rd-nav-item dropdown">
-                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                     Contato
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="#">Fale Conosco</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#">Trabalhe Conosco</a>
-                     </div>
-                  </li>
-                  <!--Aba Agenda EDU-->
-                  <li class="rd-nav-item">
-                    <a class="rd-nav-link btn btn-primary" href="#">Agenda EDU</a>
-                  </li>
-                </ul>
-              <div >
-                <ul >
-                  <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40"/></a></li>
-                  <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40"/></a></li>
-                  <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39"/></a></li>
-                </ul>
-              </div>
-              </div>
+                </nav>
             </div>
-          </nav>
-        </div>
-      </header>
+        </header>
       <!-- Slide de imagens-->
       <section class="section-lg section-main-bunner section-main-bunner-filter text-center">
         <div class="main-bunner-img"><img src="~/images/Imagess/banner2.PNG" alt="Imagem do Banner 2" style="width: 94%; height: 90%;" /></div>       

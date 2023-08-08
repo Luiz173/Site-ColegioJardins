@@ -4,7 +4,12 @@ namespace Site_Colégio.Controllers
 {
     public class ContatoController1 : Controller
     {
-        public IActionResult Index()
+        public IActionResult FaleConosco()
+        {
+            return View();
+        }
+
+        public IActionResult TrabalheConosco()
         {
             return View();
         }

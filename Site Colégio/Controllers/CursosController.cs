@@ -1,36 +1,33 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Site_Colégio.Models;
-using System.Diagnostics;
 
 namespace Site_Colégio.Controllers
 {
-    public class InfraestruturaController1 : Controller
+    public class CursosController : Controller
     {
-        public IActionResult PInfantil()
+        public IActionResult Infantil()
         {
             return View();
         }
 
-        public IActionResult PFundamental1()
+        public IActionResult Fundamental1()
         {
             return View();
         }
 
-        public IActionResult PFundamental2()
+        public IActionResult Fundamental2()
         {
             return View();
         }
 
-        public IActionResult PMedio()
+        public IActionResult Medio()
         {
             return View();
         }
 
-        public IActionResult AreaVerde()
+        public IActionResult Integral()
         {
             return View();
         }
-
 
 
     }

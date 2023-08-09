@@ -2,7 +2,7 @@
 
 namespace Site_Colégio.Controllers
 {
-    public class ContatoController1 : Controller
+    public class ContatoController : Controller
     {
         public IActionResult FaleConosco()
         {

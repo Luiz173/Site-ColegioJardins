@@ -1,18 +1,1997 @@
-html {
-  font-size: 14px;
+
+/************************************************************************************
+POP UP
+*************************************************************************************/
+
+#pop {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.69);
+    text-align: center;
+    z-index: 100000;
+    position: fixed;
+    padding-top: 75px;
 }
 
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
+#popmobile {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.69);
+    text-align: center;
+    z-index: 100000;
+    position: fixed;
+    padding-top: 100px;
+    display: none;
 }
 
-html {
-  position: relative;
-  min-height: 100%;
+#parceiros {
+    width: 100%;
+    text-align: right;
+    float: left;
+    position: absolute;
+}
+
+.margempop {
+    margin-left: 410px;
+}
+
+#depo-dektop {
+    display: block;
+}
+
+#depo-mobile {
+    display: none;
+}
+
+.whatsapp {
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    z-index: 90000000000000000000000
+}
+
+.iconeface {
+    position: fixed;
+    top: 15px;
+    right: 0px;
+    z-index: 999999999;
 }
 
 body {
-  margin-bottom: 60px;
+    width: 100%;
+    overflow-x: hidden;
+    margin: 0px;
 }
+
+
+
+
+
+
+
+/************************************************************************************
+
+clientes
+
+*************************************************************************************/
+
+
+
+.clientes img {
+    margin-top: 40px;
+    width: 220px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    float: left;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-bottom: 0px;
+}
+
+.clientesmodal img {
+    margin-top: 0px;
+    width: 220px;
+    height: 150px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    float: left;
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-bottom: 0px;
+}
+
+
+
+.clientes h1, h2, h3 {
+    text-align: left;
+    margin-top: 0px;
+}
+
+.clientes p {
+    text-align: left;
+}
+
+.caixabotaocliente {
+    align-content: center;
+    width: 100%;
+}
+
+.buttonabrircliente {
+    position: relative;
+    background-color: #2AACD4;
+    border: none;
+    font-size: 10px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 10%;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+    .buttonabrircliente:after {
+        content: "";
+        background: #2AACD4;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -40px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+
+
+
+    .buttonabrircliente:active:after {
+        padding: 0;
+        margin: 2cm;
+        opacity: 1;
+        transition: 0s
+    }
+
+
+
+/************************************************************************************
+
+Resolução Desktop
+
+*************************************************************************************/
+
+
+
+
+
+/* HOME */
+
+#topo {
+    width: 100%;
+    height: 150px;
+    float: left;
+    text-align: center;
+    background-attachment: scroll;
+    background-image: url(../images/topo.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    position: absolute;
+    z-index: 100000;
+}
+
+#logo {
+    width: 25%;
+    float: left;
+    margin-left: 5%;
+    padding-top: 20px;
+    text-align: left;
+}
+
+#area_restrita {
+    width: 65%;
+    float: left;
+    margin-right: 5%;
+    text-align: right;
+    z-index: 10000;
+}
+
+#menu_desktop {
+    width: 62%;
+    height: 120px;
+    float: left;
+    margin-right: 8%;
+    text-align: right;
+    padding-top: 20px;
+}
+
+#banner {
+    width: 100%;
+    float: left;
+    margin-top: 120px;
+}
+
+#bg_vermelho {
+    width: 100%;
+    float: left;
+    height: 800px;
+    background-attachment: scroll;
+    background-image: url(../images/bg_vermelho.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100%;
+}
+
+
+
+#conteudo_bg {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+
+#tour {
+    width: 42%;
+    float: left;
+    margin-top: 95px;
+    margin-left: 5%
+}
+
+#pedagogica {
+    width: 43%;
+    float: left;
+    margin-top: 95px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 150px
+}
+
+#cinza {
+    width: 90%;
+    float: left;
+    background-attachment: scroll;
+    background-image: url(../images/bg_internas.png);
+    background-repeat: repeat;
+    background-position: center center;
+    margin-top: 40px;
+    padding: 5%;
+    text-align: center;
+}
+
+
+
+
+
+#caixa_ic {
+    width: 30%;
+    height: 120px;
+    float: left;
+    text-align: left;
+    margin-top: 50px;
+    margin-right: 3%
+}
+
+#caixa_ic_interno {
+    width: 28%;
+    float: left;
+    margin-right: 6%;
+}
+
+#depoimentos {
+    width: 25%;
+    float: left;
+    margin-right: 1%;
+}
+
+#cursos {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: #000
+}
+
+#nossos_cursos {
+    width: 15%;
+    margin-left: 5%;
+    float: left;
+}
+
+#ensino {
+    width: 14%;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+    text-align: center
+}
+
+#img_home {
+    width: 100%;
+    float: left;
+    height: 350px;
+    background-attachment: fixed;
+    background-image: url(../images/img_home.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 150px;
+    text-align: center;
+}
+
+#foto {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#bg_blog {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-attachment: fixed;
+    background-image: url(../images/bg_blog.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-bottom: 70px;
+}
+
+#conteudo_blog {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+
+
+#caixa_blog {
+    width: 25%;
+    height: auto;
+    padding: 1%;
+    float: left;
+    margin-right: 3%;
+    margin-left: 3%;
+    margin-top: 40px;
+    border: 1px solid #EFEFEF;
+    background-color: #FFF;
+    text-align: left;
+}
+
+#transporte {
+    width: 100%;
+    float: left;
+    background-color: #FBD826;
+    margin-top: 20px;
+}
+
+#info_transporte {
+    width: 37%;
+    float: left;
+    margin-right: 5%;
+    margin-left: 8%;
+    margin-top: 50px;
+}
+
+#images_transporte {
+    width: 50%;
+    float: left;
+}
+
+#rede_social {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    float: left;
+    text-align: center;
+    margin-top: 80px;
+}
+
+#rodape {
+    width: 100%;
+    float: left;
+    margin-top: 120px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#logo_rodape {
+    width: 25%;
+    float: left;
+    margin-right: 6%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+#endereco_rodape {
+    width: 20%;
+    float: left;
+    text-align: left;
+    margin-right: 5%
+}
+
+#face_rodape {
+    width: 30%;
+    float: left;
+}
+
+#life {
+    width: 100%;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #000;
+}
+
+#sociais {
+    float: left;
+    position: fixed;
+    right: 0;
+    top: 0%;
+    margin-top: 220px;
+    text-align: right;
+    z-index: 99999999
+}
+
+#topo_mobile {
+    display: none;
+}
+
+#logo_mobile {
+    display: none;
+}
+
+
+
+
+
+#bg {
+    width: 100%;
+    float: left;
+    background-attachment: fixed;
+    background-image: url(../images/bg_1.png);
+    background-repeat: repeat;
+    background-position: center center;
+    background-color: #FFF;
+}
+
+
+
+
+
+/* NOSSA HISTÓRIA */
+
+#topo_paginas {
+    width: 100%;
+    float: left;
+    height: 170px;
+    margin-top: 90px;
+    background-color: #D4242A;
+}
+
+#title_paginas {
+    width: 90%;
+    float: left;
+    margin-right: 10%;
+    height: 123px;
+    padding-top: 90px;
+    text-align: right;
+}
+
+#conteudo_paginas {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: left;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+#foto_historia {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_historia.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+#matricula {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/matriculas.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#frota {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/frota.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+
+
+/* FILOSOFIA */
+
+#esquerda_filosofia {
+    width: 45%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#direita_filosofia {
+    width: 40%;
+    float: left;
+    margin-right: 5%;
+    text-align: left;
+    margin-top: 90px;
+}
+
+#conteudo_filosofia {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    float: left;
+    margin-bottom: 50px;
+    text-align: left;
+    border: 1px dashed #C00;
+}
+
+#foto_filosofia {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_filosofia.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+/* PROPOSTA */
+
+#foto_proposta {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_proposta.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+/* INSTALACOES */
+
+#centro {
+    width: 100%;
+    float: left;
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+#esquerda_instalacoes {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+    text-align: left;
+}
+
+#direita_instalacoes {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+    text-align: left;
+}
+
+#foto_instalacoes {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_instalacoes.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#slide_instalacoes {
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5%;
+    float: left;
+    margin-bottom: 50px;
+    text-align: left;
+    border: 1px dashed #C00;
+    margin-top: 50px;
+}
+
+
+
+
+
+/* CURSOS EDUCAÇÃO INFANTIL*/
+
+#esquerda_cursos {
+    width: 58%;
+    float: left;
+    margin-left: 5%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+#direita_cursos {
+    width: 20%;
+    float: left;
+    padding: 3%;
+    margin-right: 5%;
+    margin-left: 6%;
+    text-align: left;
+    margin-top: 120px;
+    background-color: #000
+}
+
+#horario_cursos {
+    width: 16%;
+    float: left;
+    padding: 3%;
+    margin-right: 5%;
+    margin-left: 3%;
+    text-align: left;
+    background-color: #F5F5F5;
+}
+
+#destaque_curso {
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+#caixa_cursos {
+    width: 29%;
+    height: auto;
+    margin-bottom: 25px;
+    float: left;
+    margin-right: 4%;
+    text-align: left;
+}
+
+#caixa_cursos1 {
+    width: 50%;
+    height: auto;
+    margin-bottom: 25px;
+    float: left;
+    margin-right: 4%;
+    text-align: left;
+}
+
+#foto_infantil {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_infantil.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+/* CURSOS FUNDAMENTAL 1*/
+
+#foto_fundamental1 {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_fundamental_1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+/* CURSOS FUNDAMENTAL 2*/
+
+#foto_fundamental2 {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_fundamental_2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+/* ENSINO MEDIO*/
+
+#foto_medio {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_medio.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+/* PERIODO INTEGRAL*/
+
+#foto_integral {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_integral.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+#foto_lateral {
+    width: 20%;
+    float: left;
+    padding: 3%;
+    margin-right: 5%;
+    margin-left: 6%;
+    text-align: left;
+}
+
+
+
+
+
+/* PRE VESTIBULAR*/
+
+#foto_pre {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_pre.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+
+
+
+
+/* BLOG*/
+
+#foto_blog1 {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_blog1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#caixa_blog1 {
+    width: 20%;
+    height: 232px;
+    padding: 1%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border: 1px solid #EFEFEF;
+    background-color: #FFF;
+    text-align: left;
+}
+
+
+
+
+
+/* VER BLOG*/
+
+#caixa_fotos_blog {
+    width: 23%;
+    float: left;
+    padding: 1%;
+}
+
+#barra_video {
+    width: 38%;
+    margin-left: 30%;
+    margin-right: 30%;
+    float: left;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+    background-attachment: scroll;
+    background-image: url(../images/bg_internas.png);
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+#voltar {
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: #D4242A;
+    background-attachment: scroll;
+    background-image: url(../images/desenho.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#cinza_ver {
+    width: 90%;
+    float: left;
+    background-attachment: scroll;
+    background-image: url(../images/bg_internas.png);
+    background-repeat: repeat;
+    background-position: center center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* VÍDEOS*/
+
+#video {
+    width: 27%;
+    margin-left: 2%;
+    margin-right: 2%;
+    float: left;
+    height: auto;
+    padding: 1%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-attachment: scroll;
+    background-image: url(../images/bg_internas.png);
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+
+
+
+
+
+
+/* CONTATO */
+
+#esquerda_contato {
+    width: 62%;
+    height: auto;
+    float: left;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+#direita_contato {
+    width: 24%;
+    height: auto;
+    float: left;
+    text-align: left;
+    margin-top: 130px;
+    margin-bottom: 50px;
+    margin-right: 5%;
+}
+
+#coluna_contato {
+    width: 25%;
+    height: auto;
+    float: left;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 3%;
+}
+
+#foto_contato {
+    width: 100%;
+    float: left;
+    height: 250px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    padding-top: 180px;
+    text-align: center;
+    background-attachment: fixed;
+    background-image: url(../images/foto_blog.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+
+
+/* IMPRENSA */
+
+#centro_imprensa {
+    width: 90%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+    #depoimentos {
+        width: 100%;
+        float: left;
+        margin-right: 1%;
+    }
+
+    #depo-dektop {
+        display: none
+    }
+
+    #pop {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.69);
+        text-align: center;
+        z-index: 100000;
+        position: fixed;
+        padding-top: 100px;
+        display: none;
+    }
+
+    #popmobile {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.69);
+        text-align: center;
+        z-index: 100000;
+        position: fixed;
+        padding-top: 100px;
+        display: block;
+    }
+
+
+
+
+
+    #topo {
+        display: none;
+    }
+
+    #rede_social {
+        display: none;
+    }
+
+    #banner {
+        width: 100%;
+        float: left;
+        margin-top: 30px;
+    }
+
+    #bg_vermelho {
+        width: 100%;
+        float: left;
+        height: auto;
+        background-attachment: scroll;
+        background-image: url(../images/bg_vermelh01.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100%;
+    }
+
+    #img_home {
+        width: 100%;
+        float: left;
+        height: 180px;
+        background-attachment: scroll;
+        background-image: url(../images/img_home.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    #foto {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #tour {
+        width: 90%;
+        float: left;
+        margin-top: 95px;
+        margin-left: 5%;
+        margin-right: 5%
+    }
+
+    #pedagogica {
+        width: 90%;
+        float: left;
+        margin-top: 0px;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 50px;
+        background: #FFF
+    }
+
+    #cinza {
+        width: 90%;
+        float: left;
+        background-attachment: scroll;
+        background-image: url(../images/bg_internas.png);
+        background-repeat: repeat;
+        background-position: center center;
+        margin-top: 40px;
+        padding: 5%;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    #caixa_ic {
+        width: 94%;
+        height: 120px;
+        float: left;
+        text-align: left;
+        margin-top: 50px;
+        margin-right: 3%;
+        margin-left: 3%
+    }
+
+    #nossos_cursos {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        float: left;
+    }
+
+    #ensino {
+        width: 92%;
+        margin-left: 3%;
+        margin-right: 3%;
+        float: left;
+        text-align: center
+    }
+
+    #caixa_blog {
+        width: 92%;
+        height: auto;
+        padding: 1%;
+        float: left;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 40px;
+        border: 1px solid #EFEFEF;
+        background-color: #FFF;
+        text-align: left;
+    }
+
+    #info_transporte {
+        width: 94%;
+        float: left;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 50px;
+    }
+
+    #images_transporte {
+        width: 100%;
+        float: left;
+    }
+
+    #rodape {
+        width: 100%;
+        float: left;
+        margin-top: 120px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-attachment: scroll;
+        background-image: url(../images/bg_rodape.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    #logo_rodape {
+        width: 70%;
+        float: left;
+        margin-right: 23%;
+        margin-left: 7%;
+        text-align: center;
+    }
+
+    #endereco_rodape {
+        width: 90%;
+        float: left;
+        text-align: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #face_rodape {
+        width: 94%;
+        float: left;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    #topo_mobile {
+        width: 100%;
+        float: left;
+        text-align: left;
+        margin-top: 80px;
+        display: block;
+    }
+
+    #logo_mobile {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    #face_rodape {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+    /* NOSSA HISTÓRIA */
+
+    #topo_paginas {
+        width: 100%;
+        float: left;
+        height: 170px;
+        margin-top: 40px;
+        background-color: #D4242A;
+        background-attachment: scroll;
+        background-image: url(../images/marca_dagua.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+
+    #title_paginas {
+        width: 100%;
+        float: left;
+        margin-right: 0%;
+        height: 123px;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    #foto_historia {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_historia.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    #matricula {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/matriculas.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+    #frota {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/frota.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+
+
+    /* FILOSOFIA */
+
+    #esquerda_filosofia {
+        width: 90%;
+        float: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    #direita_filosofia {
+        width: 90%;
+        float: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: left;
+        margin-top: 70px;
+        margin-bottom: 20px;
+    }
+
+    #conteudo_filosofia {
+        width: 78%;
+        margin-right: 5%;
+        margin-left: 5%;
+        padding: 5%;
+        float: left;
+        margin-bottom: 50px;
+        text-align: left;
+        border: 1px dashed #C00;
+        margin-top: 30px;
+    }
+
+    #foto_filosofia {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_filosofia.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+    /* PRPOPOSTA*/
+
+    #foto_proposta {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_proposta.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+
+
+    /* INSTALACOES */
+
+    #esquerda_instalacoes {
+        width: 100%;
+        float: left;
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: left;
+        margin-top: 0px;
+    }
+
+    #direita_instalacoes {
+        width: 100%;
+        float: left;
+        height: 300px;
+        text-align: left;
+        margin-left: 0%;
+        margin-right: 0%;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    #foto_instalacoes {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_instalacoes.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+    /* CURSOS EDUCAÇÃO INFANTIL*/
+
+    #esquerda_cursos {
+        width: 80%;
+        float: left;
+        margin-left: 10%;
+        margin-right: 10px;
+        text-align: left;
+        margin-top: 50px;
+    }
+
+    #direita_cursos {
+        width: 80%;
+        float: left;
+        padding: 10%;
+        margin-right: 0%;
+        margin-left: 0%;
+        text-align: left;
+        margin-top: 40px;
+        background-color: #000
+    }
+
+    #destaque_curso {
+        width: 100%;
+        float: left;
+        text-align: left;
+    }
+
+    #caixa_cursos {
+        width: 100%;
+        height: auto;
+        margin-bottom: 60px;
+        float: left;
+        margin-right: 0%;
+        text-align: left;
+    }
+
+    #foto_infantil {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_infantil.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+    /* CURSOS FUNDAMENTAL 1*/
+
+    #foto_fundamental1 {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_fundamental_1.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+    /* CURSOS FUNDAMENTAL 2*/
+
+    #foto_fundamental1 {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_fundamental_2.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+    /* CURSOS PERIODO INTEGRAL */
+
+    #foto_lateral {
+        width: 100%;
+        float: left;
+        padding-top: 3%;
+        text-align: left;
+    }
+
+    #foto_integral {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_integral.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+    /* PRE VESTIBULAR */
+
+    #foto_pre {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_pre.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+
+
+    /* BLOG*/
+
+    #foto_blog1 {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_blog1.png);
+    }
+
+    #caixa_blog1 {
+        width: 37%;
+        height: auto;
+        padding: 1%;
+        float: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border: 1px solid #EFEFEF;
+        background-color: #FFF;
+        text-align: left;
+    }
+
+
+
+
+
+    /* VER BLOG*/
+
+    #caixa_fotos_blog {
+        width: 48%;
+        float: left;
+        padding: 1%;
+    }
+
+    #barra_video {
+        width: 98%;
+        margin-left: 0%;
+        margin-right: 0%;
+        float: left;
+        height: auto;
+        padding: 1%;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/bg_internas.png);
+        background-repeat: repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+    /* VÍDEOS*/
+
+    #video {
+        width: 44%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        height: auto;
+        padding: 1%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        background-attachment: scroll;
+        background-image: url(../images/bg_internas.png);
+        background-repeat: repeat;
+        background-position: center center;
+    }
+
+
+
+
+
+
+
+    /* CONTATO */
+
+    #esquerda_contato {
+        width: 80%;
+        height: auto;
+        float: left;
+        text-align: left;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-left: 8%;
+        margin-right: 10%;
+    }
+
+    #direita_contato {
+        width: 80%;
+        height: auto;
+        float: left;
+        text-align: left;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    #coluna_contato {
+        width: 80%;
+        height: auto;
+        float: left;
+        text-align: left;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #foto_contato {
+        width: 100%;
+        float: left;
+        height: 250px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-top: 180px;
+        text-align: center;
+        background-attachment: scroll;
+        background-image: url(../images/foto_blog.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+    #depo-dektop {
+        display: none
+    }
+
+    #depo-mobile {
+        display: block
+    }
+
+
+
+
+    #topo {
+        display: none;
+    }
+
+    #rede_social {
+        display: none;
+    }
+
+    #banner {
+        width: 100%;
+        float: left;
+        margin-top: 30px;
+    }
+
+    #bg_vermelho {
+        width: 100%;
+        float: left;
+        height: auto;
+        background-attachment: scroll;
+        background-image: url(../images/bg_vermelh01.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 100%;
+    }
+
+    #img_home {
+        width: 100%;
+        float: left;
+        height: 180px;
+        background-attachment: scroll;
+        background-image: url(../images/img_home.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        padding-top: 100px;
+        text-align: center;
+    }
+
+    #foto {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #tour {
+        width: 90%;
+        float: left;
+        margin-top: 95px;
+        margin-left: 5%;
+        margin-right: 5%
+    }
+
+    #pedagogica {
+        width: 90%;
+        float: left;
+        margin-top: 0px;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 50px;
+        background: #FFF
+    }
+
+    #cinza {
+        width: 90%;
+        float: left;
+        background-attachment: scroll;
+        background-image: url(../images/bg_internas.png);
+        background-repeat: repeat;
+        background-position: center center;
+        margin-top: 40px;
+        padding: 5%;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    #caixa_ic {
+        width: 94%;
+        height: 120px;
+        float: left;
+        text-align: left;
+        margin-top: 50px;
+        margin-right: 3%;
+        margin-left: 3%
+    }
+
+    #nossos_cursos {
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+        float: left;
+    }
+
+    #ensino {
+        width: 92%;
+        margin-left: 3%;
+        margin-right: 3%;
+        float: left;
+        text-align: center
+    }
+
+    #caixa_blog {
+        width: 92%;
+        height: auto;
+        padding: 1%;
+        float: left;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 40px;
+        border: 1px solid #EFEFEF;
+        background-color: #FFF;
+        text-align: left;
+    }
+
+    #info_transporte {
+        width: 94%;
+        float: left;
+        margin-right: 3%;
+        margin-left: 3%;
+        margin-top: 50px;
+    }
+
+    #images_transporte {
+        width: 100%;
+        float: left;
+    }
+
+    #rodape {
+        width: 100%;
+        float: left;
+        margin-top: 120px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background-attachment: scroll;
+        background-image: url(../images/bg_rodape.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+
+    #logo_rodape {
+        width: 80%;
+        float: left;
+        margin-right: 10%;
+        margin-left: 10%;
+        text-align: center;
+    }
+
+    #endereco_rodape {
+        width: 90%;
+        float: left;
+        text-align: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    #face_rodape {
+        width: 94%;
+        float: left;
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    #topo_mobile {
+        width: 100%;
+        float: left;
+        text-align: left;
+        margin-top: 80px;
+        display: block;
+    }
+
+    #logo_mobile {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+
+    #face_rodape {
+        display: none;
+    }
+
+
+
+
+
+    /* BLOG*/
+
+    #caixa_blog1 {
+        width: 88%;
+        height: auto;
+        padding: 1%;
+        float: left;
+        margin-right: 5%;
+        margin-left: 5%;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        border: 1px solid #EFEFEF;
+        background-color: #FFF;
+        text-align: left;
+    }
+
+
+
+    /* VÍDEOS*/
+
+    #video {
+        width: 94%;
+        margin-left: 2%;
+        margin-right: 2%;
+        float: left;
+        height: auto;
+        padding: 1%;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        background-attachment: scroll;
+        background-image: url(../images/bg_internas.png);
+        background-repeat: repeat;
+        background-position: center center;
+    }
+}
+
+
+
+
+
+.responsive {
+    width: 100%;
+}
+
+.responsive1 {
+    width: 100%;
+    border-radius: 50%;
+    width: 200px; /* width of container */
+    height: 200px; /* height of container */
+    object-fit: cover;
+    border: 5px solid #D4242A;
+}
+
+
+
+.res {
+    width: 50%;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+
+    .embed-container iframe, .embed-container object, .embed-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

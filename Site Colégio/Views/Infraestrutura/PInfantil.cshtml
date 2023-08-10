@@ -1,5 +1,383 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "PInfantil";
 }
+
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="pt-br">
+<head>
+    <title>Colégio Jardin's</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="~/images/Imagess/logo.png" type="images/Imagess/logo.png">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700">
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/fonts.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+            display: block;
+        }</style>
+    <style>
+        .rd-navbar {
+            /* Defina o fundo inicial como transparente */
+            background: transparent;
+            /* Adicione a propriedade de transição para a opacidade do pseudo-elemento */
+            transition: opacity 0.3s ease;
+            /* Defina a posição do pseudo-elemento para cobrir toda a navbar */
+            position: relative;
+        }
+
+            /* Crie um pseudo-elemento para o fundo gradiente */
+            .rd-navbar::before {
+                /* Posicione o pseudo-elemento atrás do conteúdo */
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                /* Defina a opacidade inicial como 0 para torná-lo transparente */
+                opacity: 0;
+                /* Aplique o gradiente linear ao pseudo-elemento */
+                background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #18244f);
+                /* Defina o z-index como -1 para garantir que ele fique atrás do conteúdo */
+                z-index: -1;
+                /* Adicione a propriedade de transição para a opacidade do pseudo-elemento */
+                transition: opacity 0.3s ease;
+            }
+
+            /* Aplique o fundo gradiente quando houver scroll */
+            .rd-navbar.scrolled {
+                background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #18244f);
+            }
+
+                /* Exiba o pseudo-elemento com o gradiente quando houver scroll */
+                .rd-navbar.scrolled::before {
+                    opacity: 1;
+                }
+    </style>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-image: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #18244f);
+            padding: 0px; /* Increase padding to make the container slightly larger */
+            border-radius: 20px;
+            box-shadow: 0 10px 8px -8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .image-wrapper {
+            flex: 1;
+            position: relative;
+            height: 200px; /* Height of each row */
+        }
+
+            .image-wrapper:not(:last-child) {
+                margin-right: 0px; /* Spacing between images */
+            }
+
+            .image-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 1px; /* To make images inside slightly rounded */
+            }
+
+        .center-image {
+            width: 200px; /* Width of the center image */
+        }
+
+            .center-image img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain; /* Fit the entire image inside the container */
+                border-radius: 100px; /* To make image inside rounded */
+            }
+    </style>
+    <style>
+        section {
+            text-align: center;
+        }
+
+        .partners-section {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+            .partners-section img {
+                max-width: 100%;
+                height: auto;
+                margin: 0 20px;
+            }
+    </style>
+    <style>
+        .text-left {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        window.addEventListener("scroll", function () {
+            var navbar = document.querySelector(".rd-navbar");
+            var scrolled = window.scrollY > 46;
+            // Adicione ou remova a classe "scrolled" para acionar a transição
+            if (scrolled) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
+    <div class="preloader">
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Carregando...</p>
+        </div>
+    </div>
+    <div class="page">
+        <!-- Page Header-->
+        <header class="page-header">
+            <!-- RD Navbar-->
+            <div class="rd-navbar-wrap">
+                <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true" ; style="background-color: transparent;">
+                    <div class="rd-navbar-main-outer">
+                        <div class="rd-navbar-main">
+                            <!-- RD Navbar Panel-->
+                            <div class="rd-navbar-panel">
+                                <!-- RD Navbar Brand-->
+                                <div>
+                                    <a></a>
+                                </div>
+                            </div>
+                            <ul class="rd-navbar-nav">
+                                <!--Aba Página Incial-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="/">Página Inicial</a>
+                                </li>
+                                <!--Aba Quem Somos-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Quem Somos
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="NossaHistoria">Nossa História</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Missao">Missão</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Proposta">Proposta Pedagógica</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Parceiros">Parceiros</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Diferencial">Diferencial</a>
+                                    </div>
+                                </li>
+                                <!--Aba Cursos-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Cursos
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Infantil">Ensino Infantil</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Fundamental1">Ensino Fundamental I</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Fundamental2">Ensino Fundamental II</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Medio">Ensino Médio</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Cursos" asp-action="Integral">Período Integral</a>
+                                    </div>
+                                </li>
+                                <!--Aba Notícias-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" asp-controller="Home" asp-action="Noticia">Notícias</a>
+                                </li>
+                                <!--LOGO-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link" href="/"><img class="brand-logo-light" src="~/images/Imagess/logo.png" alt="" width="110" height="110" srcset="~/images/Imagess/logo.png 2x" /></a>
+                                </li>
+                                <!--Aba Infraestrutura-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Infraestrutura
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PInfantil">Prédio Ensino Infantil</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PFundamental1">Prédio Ensino Fundamental I</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PFundamental2">Prédio Ensino Fundamental II</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="PMedio">Prédio Ensino Médio</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Infraestrutura" asp-action="AreaVerde">Área Verde</a>
+                                    </div>
+                                </li>
+                                <!--Aba Contato-->
+                                <li class="rd-nav-item dropdown">
+                                    <a class="rd-nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Contato
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" asp-controller="Contato" asp-action="FaleConosco">Fale Conosco</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="Contato" asp-action="TrabalheConosco">Trabalhe Conosco</a>
+                                    </div>
+                                </li>
+                                <!--Aba Agenda EDU-->
+                                <li class="rd-nav-item">
+                                    <a class="rd-nav-link btn btn-primary" href="#">Agenda EDU</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <ul>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Slide de imagens-->
+        <section class="section-lg section-main-bunner section-main-bunner-filter text-center">
+            <div class="main-bunner-img"><img src="~/images/Imagess/banner2.PNG" alt="Imagem do Banner 2" style="width: 94%; height: 90%;" /></div>
+            <div class="main-bunner-inner">
+                <div class="container">
+                    <div class="box-default">
+                        <h1 class="box-default-title">Prédio Infantil</h1>
+                        <div class="box-default-decor"></div>
+                        <p class="big box-default-text">Venha conhecer nossas Instalações<br />Localizado na Rua das Glicínias 80, Vila Mimosa  </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Imagens Cursos-->
+        <div class="bg-gray-1">
+            <section class="section-transform-top">
+                <div class="container image-container">
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/infantil.png" alt="Imagem 1" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 2" />
+                    </div>
+                    <div class="image-wrapper center-image">
+                        <img src="~/images/Imagess/logo.png" alt="Imagem 3" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 4" />
+                    </div>
+                    <div class="image-wrapper">
+                        <img src="~/images/Imagess/medio.png" alt="Imagem 5" />
+                    </div>
+                </div>
+            </section>
+            <!--Fotos Infraestrutura-->
+            <section class="section section-lg bg-gray-1">
+                <h2 style="text-align: center; width: 100% ;">Nossa Infraestrutura</h2>
+                <div class="row isotope-wrap">
+                    <!-- Galeria-->
+                    <div class="col-lg-12">
+                        <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group" data-lg-thumbnail="false">
+                            <div class="row no-gutters row-condensed">
+                                <!--Fotos-->
+                                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3">
+                                    <div class="wow fadeInUp">
+                                        <div class="gallery-item-classic">
+                                            <img src="~/images/Infra/DSC08499.JPG" alt="" width="960" height="429" />
+                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/DSC08499.JPG" data-lightgallery="item">zoom</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2">
+                                    <div class="wow fadeInUp">
+                                        <div class="gallery-item-classic">
+                                            <img src="~/images/Infra/PredioFrentePraça.JPG" alt="" width="960" height="429" />
+                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/PredioFrentePraça.JPG" data-lightgallery="item">zoom</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*">
+                                    <div class="wow slideInDown">
+                                        <div class="gallery-item-classic">
+                                            <img src="~/images/Infra/FrenteFund1.JPG" alt="" width="640" height="429" />
+                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3">
+                                    <div class="wow slideInDown">
+                                        <div class="gallery-item-classic">
+                                            <img src="~/images/Infra/FrenteInfantil.JPG" alt="" width="640" height="429" />
+                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteInfantil.JPG" data-lightgallery="item">zoom</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4 isotope-item wow-outer" data-filter="Category 3">
+                                    <div class="wow slideInDown">
+                                        <div class="gallery-item-classic">
+                                            <img src="~/images/Infra/FrenteFund1.JPG" alt="" width="640" height="429" />
+                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Page Footer-->
+            <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">
+                <div class="container wow-outer">
+                    <div class="wow fadeIn">
+                        <div class="row row-60 align-items-center">
+                            <div class="col-md-4">
+                                <a href="/"><img src="~/images/Imagess/logo.png" alt="" width="140" height="57" srcset="~/images/Imagess/logo.png 2x" /></a>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 style="color: #000; font-family: 'Material Design Icons', sans-serif;"><strong>Localização</strong></h4>
+                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 10px;">Av. Ana Beatriz Bierrembach, N° 165</h5>
+                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Vila Mimosa - Campinas/SP - 13050-060</h5>
+                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Telefones: (19) 3269-9922 / (19) 3308-7006</h5>
+                            </div>
+                            <div class="col-md-4 text-md-right">
+                                <ul class="social-list">
+                                    <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
+                                    <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="~/js/core.min.js"></script>
+    <script src="~/js/script.js"></script>
+</body>
+</html>

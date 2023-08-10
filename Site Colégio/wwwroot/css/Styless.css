@@ -1,0 +1,55 @@
+﻿/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section-main-bunner {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.main-bunner-img1 {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex; /* Adicione isso para centralizar as imagens */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+    .main-bunner-img1 img {
+        max-width: 100%; /* Adicione isso para ajustar a imagem à largura do contêiner */
+        height: auto;
+        object-fit: contain; /* Use 'contain' para que a imagem se ajuste mantendo a proporção */
+        position: absolute;
+        transition: opacity 0.5s;
+        opacity: 0;
+        z-index: 1;
+    }
+
+.slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+@keyframes slideAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    66.66% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

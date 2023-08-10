@@ -276,107 +276,113 @@
             <section class="section-transform-top">
                 <div class="container image-container">
                     <div class="image-wrapper">
-                        <img src="~/images/Imagess/infantil.png" alt="Imagem 1" />
+                        <a asp-controller="Cursos" asp-action="Infantil">
+                            <img src="~/images/Imagess/infantil.png" alt="Imagem 1" />
+                        </a>
                     </div>
                     <div class="image-wrapper">
-                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 2" />
+                        <a asp-controller="Cursos" asp-action="Fundamental1">
+                            <img src="~/images/Imagess/fundamental.png" alt="Imagem 2" />
+                        </a>
                     </div>
                     <div class="image-wrapper center-image">
                         <img src="~/images/Imagess/logo.png" alt="Imagem 3" />
                     </div>
                     <div class="image-wrapper">
-                        <img src="~/images/Imagess/fundamental.png" alt="Imagem 4" />
+                        <a asp-controller="Cursos" asp-action="Fundamental2">
+                            <img src="~/images/Imagess/fundamental.png" alt="Imagem 4" />
+                        </a>
                     </div>
                     <div class="image-wrapper">
-                        <img src="~/images/Imagess/medio.png" alt="Imagem 5" />
+                        <a asp-controller="Cursos" asp-action="Medio">
+                            <img src="~/images/Imagess/medio.png" alt="Imagem 5" />
+                        </a>
                     </div>
                 </div>
             </section>
             <!--Diferencial-->
             <section class="section section-lg bg-white">
                 <div class="container">
-                    <h2 class="text-center">Nossos Diferenciais</h2>
+                    <h2 class="text-center font-family-base" style="color: #000;">Nossos Diferenciais</h2>
                     <div class="row row-30 row-md-60">
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/adesivo.jpg" width="250" height="250" /></div>
-                                <div class="box-icon-caption">
-                                    <h4>Programa Fidelidade</h4>
-                                    <p>Nosso Colégio oferece um Programa de Fidelidade com descontos progressivos para os responsáveis que mantêm as mensalidades em dia.</p>
+                        <div>
+                            <div>
+                                <img src="~/images/Imagess/adesivo.jpg" width="150" height="150" />
+                                <div>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Programa Fidelidade</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">O nosso Colégio apresenta um programa de fidelidade exclusivo, voltado para os responsáveis que assumem o compromisso de manter as mensalidades em dia. Através desse programa, disponibilizamos descontos progressivos em todas as áreas financeiras, como um reconhecimento pelo comprometimento e parceria com a nossa instituição. Valorizamos profundamente o compromisso das nossas famílias e temos como objetivo oferecer vantagens que ampliem ainda mais o sucesso educativo dos nossos alunos. Convidamos vocês a embarcar conosco nessa jornada de aprendizado e crescimento contínuo!</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/9-removebg-preview.png" width="400" height="400" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/9-removebg-preview.png" width="290" height="290" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Kung-Fu</h4>
-                                    <p>Oferecemos aulas de Kung-fu para alunos da educação infantil e ensino fundamental I do período integral. As aulas incluem dinâmicas, jogos e debates dentro do conteúdo da arte marcial, visando o desenvolvimento de habilidades físicas, motoras, psicoativas e cognitivas</p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;" >Kung-Fu</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">Oferecemos aulas de Kung-fu para alunos da educação infantil e ensino fundamental I do período integral. As aulas incluem dinâmicas, jogos e debates dentro do conteúdo da arte marcial, visando o desenvolvimento de habilidades físicas, motoras, psicoativas e cognitivas</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/7-removebg-preview.png" width="130" height="130" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/7-removebg-preview.png" width="140" height="140" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Atendimento Psicológico</h4>
-                                    <p>Nosso Colégio possui Atendimento Psicológico tanto para alunos quanto professores;</p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Atendimento Psicológico</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">Nosso Colégio possui Atendimento Psicológico tanto para alunos quanto professores;</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/8-removebg-preview.png" width="200" height="200" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/8-removebg-preview.png" width="140" height="140" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Aulas de Yoga</h4>
-                                    <p>
-                                        Nosso Colégio possui aulas de Yoga para os Pais e responsáveis, a fim de proporcionar momentos de relaxamento e prática de esportes.
-                                    </p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Aulas de Yoga</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">Nosso Colégio possui aulas de Yoga para os Pais e responsáveis, a fim de proporcionar momentos de relaxamento e prática de esportes.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/6-removebg-preview.png" width="300" height="300" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/6-removebg-preview.png" width="239" height="239" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Fanfarra</h4>
-                                    <p>Temos aulas de Fanfarra para alunos do Ensino Fundamental I até o Ensino Médio, visando desenvolver noções de espaço, tempo, ritmo, coordenação e expressão motora, além de promover a integração e socialização dos alunos.</p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Fanfarra</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">Temos aulas de Fanfarra para alunos do Ensino Fundamental I até o Ensino Médio, visando desenvolver noções de espaço, tempo, ritmo, coordenação e expressão motora, além de promover a integração e socialização dos alunos.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/10-removebg-preview.png" width="300" height="300" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/10-removebg-preview.png" width="162" height="162" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Aulas de Teatro</h4>
-                                    <p>Nosso Colégio Possui aulas de teatro para alunos da Educação Infantil até o Ensino médio, a fim de desenvolver habilidades cognitivas, sociais, emocionais e físicas.</p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Aulas de Teatro</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">Nosso Colégio Possui aulas de teatro para alunos da Educação Infantil até o Ensino médio, a fim de desenvolver habilidades cognitivas, sociais, emocionais e físicas.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/13-removebg-preview.png" width="400" height="400" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/13-removebg-preview.png" width="285" height="285" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Projeto de Vida e Empreendedorismo</h4>
-                                    <p>A disciplina Projeto de Vida Empreendedorismo ensina competências socioemocionais como autoconhecimento, inteligência emocional e colaboração. Disponível do 1º ano do Ensino Fundamental ao Ensino Médio, acompanha o aluno desde o começo até as escolhas de carreira e planos futuros.</p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Projeto de Vida e Empreendedorismo</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">A disciplina Projeto de Vida Empreendedorismo ensina competências socioemocionais como autoconhecimento, inteligência emocional e colaboração. Disponível do 1º ano do Ensino Fundamental ao Ensino Médio, acompanha o aluno desde o começo até as escolhas de carreira e planos futuros.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/11-removebg-preview.png" width="150" height="150" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/11-removebg-preview.png" width="137" height="137" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Bibliotecas</h4>
-                                    <p>Possuímosem nosso Colégio Bibliotecas completas e equipada com muitos títulos.</p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Bibliotecas</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">Possuímosem nosso Colégio Bibliotecas completas e equipada com muitos títulos.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
+                        <div>
                             <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/12-removebg-preview.png" width="150" height="150" /></div>
+                                <div class="box-icon-inner"><img src="~/images/Imagess/12-removebg-preview.png" width="136" height="136" /></div>
                                 <div class="box-icon-caption">
-                                    <h4>Laboratórios</h4>
-                                    <p>Possuímos em nosso Colégio Laboratórios de Química, com equipamentos completos.</p>
+                                    <h4 class="font-family-base" style="color: #000; font-size: 1.5rem;">Laboratórios</h4>
+                                    <p class="font-family-base" style="color: #000; font-size: 1rem;">Possuímos em nosso Colégio Laboratórios de Química, com equipamentos completos.</p>
                                 </div>
                             </div>
                         </div>

@@ -1,20 +1,33 @@
-﻿// scripts.js
-let currentSlide = 0;
-const slides = document.querySelectorAll('.slide');
+﻿let slideIndex = 0;
+const slides = document.querySelectorAll(".slide");
 
-function showSlide(index) {
-    slides.forEach(slide => slide.classList.remove('active'));
-    slides[index].classList.add('active');
-    currentSlide = index;
+function showSlide(n) {
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } else if (n < 0) {
+        slideIndex = slides.length - 1;
+    }
+
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+
+    slides[slideIndex].style.display = "block";
+}
+
+function prevSlide() {
+    showSlide(slideIndex -= 1);
 }
 
 function nextSlide() {
-    const nextIndex = (currentSlide + 1) % slides.length;
-    showSlide(nextIndex);
+    showSlide(slideIndex += 1);
 }
 
-function startAutomaticSlideshow() {
-    setInterval(nextSlide, 3000); // Troca de slide a cada 3 segundos
+// Função para trocar de slide automaticamente a cada 5 segundos
+function autoSlide() {
+    nextSlide();
+    setTimeout(autoSlide, 5000);
 }
 
-window.onload = startAutomaticSlideshow;
+// Iniciar a troca automática dos slides
+autoSlide();

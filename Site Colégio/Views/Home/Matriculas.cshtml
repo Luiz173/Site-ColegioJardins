@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "PFundamental1";
+    ViewData["Title"] = "Matriculas";
 }
 
 <!DOCTYPE html>
@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="~/css/bootstrap.css">
     <link rel="stylesheet" href="~/css/fonts.css">
     <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/Styless.css">
     <style>
         .ie-panel {
             display: none;
@@ -130,6 +131,16 @@
         .text-left {
             text-align: left;
         }
+    </style>
+    <style>
+        .custom-links a {
+            color: black; /* Defina a cor do texto dos links para preto */
+            text-decoration: none; /* Remova o sublinhado padrão dos links */
+        }
+
+            .custom-links a:hover {
+                text-decoration: underline; /* Adicione um sublinhado quando o mouse passa sobre o link */
+            }
     </style>
 </head>
 <body>
@@ -266,9 +277,9 @@
             <div class="main-bunner-inner">
                 <div class="container">
                     <div class="box-default">
-                        <h1 class="box-default-title">Prédio Fundamental I</h1>
+                        <h1 class="box-default-title">Matrículas</h1>
                         <div class="box-default-decor"></div>
-                        <p class="big box-default-text">Venha conhecer nossas Instalações<br />Localizado na Rua das Violetas 95, Vila Mimosa  </p>
+                        <p class="big box-default-text">Faça mais pelo futuro de seu filho</p>
                     </div>
                 </div>
             </div>
@@ -302,88 +313,86 @@
                     </div>
                 </div>
             </section>
-            <!--Fotos Infraestrutura-->
-            <section class="section section-lg bg-gray-1">
-                <h2 style="text-align: center; width: 100% ;">Nossa Infraestrutura</h2>
-                <div class="row isotope-wrap">
-                    <!-- Galeria-->
-                    <div class="col-lg-12">
-                        <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group" data-lg-thumbnail="false">
-                            <div class="row no-gutters row-condensed">
-                                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3">
-                                    <div class="wow fadeInUp">
-                                        <div class="gallery-item-classic">
-                                            <img src="~/images/Infra/DSC08499.JPG" alt="" width="960" height="429" />
-                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/DSC08499.JPG" data-lightgallery="item">zoom</a></div>
+            <div class="bg-gray-1">
+                <!--Mensagem-->
+                <section class="section section-lg bg-gray-1 text-center">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-9 col-lg-7">
+                                <h3 class="text-left custom-h3">MATRÍCULAS</h3>
+                                <h5 class="text-left custom-h5">Preencha o formulário abaixo para mais informações ou entre em contato e agende uma visita pelo nosso telefone.</h5>
+                                <!-- RD Mailform-->
+                                <form class="rd-form rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="bat/rd-mailform.php">
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-name-responsavel" type="text" name="responsavel">
+                                        <label class="form-label" for="contact-name-responsavel">Nome do Responsável</label>
+                                    </div>
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-name-aluno" type="text" name="aluno">
+                                        <label class="form-label" for="contact-name-aluno">Nome do Aluno</label>
+                                    </div>
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-age" type="text" name="idade">
+                                        <label class="form-label" for="contact-age">Idade do Aluno</label>
+                                    </div>
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-grade" type="text" name="serie">
+                                        <label class="form-label" for="contact-grade">Série Escolar</label>
+                                    </div>
+
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-email" type="email" name="email">
+                                        <label class="form-label" for="contact-email">E-mail para Contato</label>
+                                    </div>
+                                    <div class="form-wrap">
+                                        <input class="form-input" id="contact-phone" type="text" name="phone">
+                                        <label class="form-label" for="contact-phone">Telefone para Contato</label>
+                                    </div>
+                                    <div class="form-wrap">
+                                        <label class="form-label" for="contact-message">Assunto</label>
+                                        <textarea class="form-input" id="contact-message" name="message"></textarea>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-12 col-sm-7 col-lg-5">
+                                            <button class="button button-block button-lg button-primary" type="submit">Enviar</button>
                                         </div>
                                     </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Footer-->
+                <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">
+                    <div class="container wow-outer">
+                        <div class="wow fadeIn">
+                            <div class="row row-60 align-items-center">
+                                <div class="col-md-4">
+                                    <a href="/"><img src="~/images/Imagess/logo.png" alt="" width="140" height="57" srcset="~/images/Imagess/logo.png 2x" /></a>
                                 </div>
-                                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2">
-                                    <div class="wow fadeInUp">
-                                        <div class="gallery-item-classic">
-                                            <img src="~/images/Infra/PredioFrentePraça.JPG" alt="" width="960" height="429" />
-                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/PredioFrentePraça.JPG" data-lightgallery="item">zoom</a></div>
-                                        </div>
-                                    </div>
+                                <div class="col-md-4">
+                                    <h4 style="color: #000; font-family: 'Material Design Icons', sans-serif;"><strong>Localização</strong></h4>
+                                    <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 10px;">Av. Ana Beatriz Bierrembach, N° 165</h5>
+                                    <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Vila Mimosa - Campinas/SP - 13050-060</h5>
+                                    <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Telefones: (19) 3269-9922 / (19) 3308-7006</h5>
                                 </div>
-                                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*">
-                                    <div class="wow slideInDown">
-                                        <div class="gallery-item-classic">
-                                            <img src="~/images/Infra/FrenteFund1.JPG" alt="" width="640" height="429" />
-                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3">
-                                    <div class="wow slideInDown">
-                                        <div class="gallery-item-classic">
-                                            <img src="~/images/Infra/FrenteInfantil.JPG" alt="" width="640" height="429" />
-                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteInfantil.JPG" data-lightgallery="item">zoom</a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-12 col-md-4 isotope-item wow-outer" data-filter="Category 3">
-                                    <div class="wow slideInDown">
-                                        <div class="gallery-item-classic">
-                                            <img src="~/images/Infra/FrenteFund1.JPG" alt="" width="640" height="429" />
-                                            <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
-                                        </div>
-                                    </div>
+                                <div class="col-md-4 text-md-right">
+                                    <ul class="social-list">
+                                        <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
+                                        <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
+                                        <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- Page Footer-->
-            <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">
-                <div class="container wow-outer">
-                    <div class="wow fadeIn">
-                        <div class="row row-60 align-items-center">
-                            <div class="col-md-4">
-                                <a href="/"><img src="~/images/Imagess/logo.png" alt="" width="140" height="57" srcset="~/images/Imagess/logo.png 2x" /></a>
-                            </div>
-                            <div class="col-md-4">
-                                <h4 style="color: #000; font-family: 'Material Design Icons', sans-serif;"><strong>Localização</strong></h4>
-                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 10px;">Av. Ana Beatriz Bierrembach, N° 165</h5>
-                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Vila Mimosa - Campinas/SP - 13050-060</h5>
-                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Telefones: (19) 3269-9922 / (19) 3308-7006</h5>
-                            </div>
-                            <div class="col-md-4 text-md-right">
-                                <ul class="social-list">
-                                    <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
-                                    <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
-                                    <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+                </footer>
+            </div>
         </div>
     </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="~/js/core.min.js"></script>
     <script src="~/js/script.js"></script>
+    <script src="~/js/JSL.js"></script>
 </body>
 </html>

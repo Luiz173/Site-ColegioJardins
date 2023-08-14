@@ -40,3 +40,47 @@
 }
 
 /* Restante do estilo permanece igual */
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.title,
+.info {
+    text-align: left; /* Alinhar à esquerda */
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #007BFF;
+}
+
+.info {
+    font-size: 16px;
+}
+
+.custom-h3 {
+    font-family: Calibri, sans-serif; /* Defina a fonte desejada, use um fallback caso a fonte não esteja disponível */
+    font-size: 50px; /* Defina o tamanho desejado */
+    /*color: cyan;*/
+    /* Outros estilos, se necessário */
+}
+
+.custom-h5 {
+    font-family: Helvetica, sans-serif; /* Defina a fonte desejada, use um fallback caso a fonte não esteja disponível */
+    font-size: 18px; /* Defina o tamanho desejado */
+    /* Outros estilos, se necessário */
+}
+
+
+
+

@@ -18,7 +18,7 @@ namespace Site_Colégio.Controllers
             return View();
         }
 
-        public IActionResult Noticia()
+        public IActionResult Matriculas()
         {
             return View();
         }

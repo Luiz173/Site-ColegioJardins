@@ -261,7 +261,10 @@
                         <div class="slide">
                             <img src="~/images/Imagess/banner5.PNG" alt="Imagem do Banner 3" />
                         </div>
-                        <!-- Adicione mais slides conforme necessário -->
+                    </div>
+                    <div class="slider-controls">
+                        <button class="slider-control prev" onclick="prevSlide()">Anterior</button>
+                        <button class="slider-control next" onclick="nextSlide()">Próximo</button>
                     </div>
                 </div>
             </div>
@@ -276,7 +279,7 @@
                         </a>
                     </div>
                     <div class="image-wrapper">
-                        <a asp-controller="Cursos" asp-action="Fundamenatl1">
+                        <a asp-controller="Cursos" asp-action="Fundamental1">
                             <img src="~/images/Imagess/fundamental.png" alt="Imagem 2" />
                         </a>
                     </div>
@@ -311,7 +314,7 @@
                             <p class="text-left">Fundado em 1997 o Colégio Jardin's cultiva o lema de que juntos Educação, Amor e Seriedade são as bases para uma formação integral do aluno em todas as dimensões, possibilitando que ele seja um agente transformador de si e da sociedade.</p>
                             <br />
                             <div style="text-align: left;">
-                                <a href="#" class="btn btn-primary">Saiba Mais</a>
+                                <a class="btn btn-primary" asp-controller="QuemSomos" asp-action="NossaHistoria">Saiba Mais</a>
                             </div>
                         </div>
                     </div>

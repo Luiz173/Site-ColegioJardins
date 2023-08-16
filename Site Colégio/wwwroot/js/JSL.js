@@ -23,11 +23,9 @@ function nextSlide() {
     showSlide(slideIndex += 1);
 }
 
-// Função para trocar de slide automaticamente a cada 5 segundos
 function autoSlide() {
     nextSlide();
     setTimeout(autoSlide, 5000);
 }
 
-// Iniciar a troca automática dos slides
 autoSlide();

@@ -41,17 +41,18 @@
     padding: 10px 15px;
     cursor: pointer;
     z-index: 3;
-    position: relative; /* Adicione esta linha */
-    top: 0; /* Adicione esta linha */
-    transform: translateY(-50%); /* Adicione esta linha */
+    position: relative;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 20px; /* Tamanho da fonte das setas */
 }
 
-    .slider-control.prev {
-        left: 0; /* Posicione o botão de "Anterior" à esquerda */
+    .slider-control.prev::before {
+        content: "◄"; /* Seta esquerda */
     }
 
-    .slider-control.next {
-        right: 0; /* Posicione o botão de "Próximo" à direita */
+    .slider-control.next::before {
+        content: "►"; /* Seta direita */
     }
 
 /* Restante do estilo permanece igual */

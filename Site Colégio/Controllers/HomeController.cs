@@ -18,10 +18,6 @@ namespace Site_Colégio.Controllers
             return View();
         }
 
-        public IActionResult Matriculas()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

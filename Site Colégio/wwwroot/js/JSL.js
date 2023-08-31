@@ -1,6 +1,5 @@
 ﻿let slideIndex = 0;
 const slides = document.querySelectorAll(".slide");
-const slider = document.querySelector(".slider");
 
 function showSlide(n) {
     if (n >= slides.length) {
@@ -9,8 +8,8 @@ function showSlide(n) {
         slideIndex = slides.length - 1;
     }
 
-    const offset = -slideIndex * 100;
-    slider.style.transform = `translateX(${offset}%)`;
+    slides.forEach(slide => slide.style.display = "none");
+    slides[slideIndex].style.display = "block";
 }
 
 function prevSlide() {
@@ -21,9 +20,4 @@ function nextSlide() {
     showSlide(slideIndex += 1);
 }
 
-function autoSlide() {
-    nextSlide();
-    setTimeout(autoSlide, 8000); // Aumente o tempo para 8 segundos
-}
-
-autoSlide();
+showSlide(slideIndex);

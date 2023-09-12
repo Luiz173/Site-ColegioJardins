@@ -10,10 +10,12 @@
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="icon" href="~/images/Imagess/logo.png" type="images/Imagess/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CPT+Serif:400,700">
     <link rel="stylesheet" href="~/css/bootstrap.css">
     <link rel="stylesheet" href="~/css/fonts.css">
     <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" type="text/css" href="~/css/Styless.css">
     <style>
         .ie-panel {
             display: none;
@@ -38,7 +40,6 @@
             /* Defina a posição do pseudo-elemento para cobrir toda a navbar */
             position: relative;
         }
-
             /* Crie um pseudo-elemento para o fundo gradiente */
             .rd-navbar::before {
                 /* Posicione o pseudo-elemento atrás do conteúdo */
@@ -51,18 +52,16 @@
                 /* Defina a opacidade inicial como 0 para torná-lo transparente */
                 opacity: 0;
                 /* Aplique o gradiente linear ao pseudo-elemento */
-                background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #18244f);
+                background: linear-gradient(120deg, #f9dc03, #a6a557, #536fab, #0038ff);
                 /* Defina o z-index como -1 para garantir que ele fique atrás do conteúdo */
                 z-index: -1;
                 /* Adicione a propriedade de transição para a opacidade do pseudo-elemento */
                 transition: opacity 0.3s ease;
             }
-
             /* Aplique o fundo gradiente quando houver scroll */
             .rd-navbar.scrolled {
-                background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #18244f);
+                background: linear-gradient(120deg, #f9dc03, #a6a557, #536fab, #0038ff);
             }
-
                 /* Exiba o pseudo-elemento com o gradiente quando houver scroll */
                 .rd-navbar.scrolled::before {
                     opacity: 1;
@@ -162,12 +161,7 @@
                     <div class="rd-navbar-main-outer">
                         <div class="rd-navbar-main">
                             <!-- RD Navbar Panel-->
-                            <div class="rd-navbar-panel">
-                                <!-- RD Navbar Brand-->
-                                <div>
-                                    <a></a>
-                                </div>
-                            </div>
+                            <div></div>
                             <ul class="rd-navbar-nav">
                                 <!--Aba Página Incial-->
                                 <li class="rd-nav-item">
@@ -185,9 +179,9 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Proposta">Proposta Pedagógica</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Parceiros">Parceiros</a>
-                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Diferencial">Diferencial</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Parceiros">Parceiros</a>
                                     </div>
                                 </li>
                                 <!--Aba Cursos-->
@@ -241,14 +235,14 @@
                                 </li>
                                 <!--Aba Agenda EDU-->
                                 <li class="rd-nav-item">
-                                    <a class="rd-nav-link btn btn-primary" href="https://agendaedu.com/">Agenda EDU</a>
+                                    <a class="rd-nav-link btn btn-primary" href="https://api.whatsapp.com/send?phone=+551996143513&text=Ol%C3%A1,%20estou%20no%20site%20do%20Col%C3%A9gio%20Jardins%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">Matrículas</a>
                                 </li>
                             </ul>
                             <div>
                                 <ul>
-                                    <li><a class="" href="https://web.facebook.com/profile.php?id=100063602259977"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
-                                    <li><a class="" href="https://www.instagram.com/colegiojardinscampinas/"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
-                                    <li><a class="" href="https://api.whatsapp.com/send?phone=+551996143513&text=Ol%C3%A1,%20estou%20no%20site%20do%20Col%C3%A9gio%20Jardins%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
+                                    <li><a class="" href="https://web.facebook.com/profile.php?id=100063602259977"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="35" height="35" /></a></li>
+                                    <li><a class="" href="https://www.instagram.com/colegiojardinscampinas/"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="35" height="35" /></a></li>
+                                    <li><a class="" href="https://api.whatsapp.com/send?phone=+551996143513&text=Ol%C3%A1,%20estou%20no%20site%20do%20Col%C3%A9gio%20Jardins%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="34" height="34" /></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -262,7 +256,7 @@
             <div class="main-bunner-inner">
                 <div class="container">
                     <div class="box-default">
-                        <h1 class="box-default-title">Nossa História</h1>
+                        <h1 class="box-default-title" style="font-family: Poppins">Nossa História</h1>
                     </div>
                 </div>
             </div>
@@ -314,35 +308,50 @@
                     </div>
                 </div>
             </section>
-            <!-- Page Footer-->
-            <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">
-                <div class="container wow-outer">
-                    <div class="wow fadeIn">
-                        <div class="row row-60 align-items-center">
-                            <div class="col-md-4">
-                                <a href="/"><img src="~/images/Imagess/logo.png" alt="" width="140" height="57" srcset="~/images/Imagess/logo.png 2x" /></a>
-                            </div>
-                            <div class="col-md-4">
-                                <h4 style="color: #000; font-family: 'Material Design Icons', sans-serif;"><strong>Localização</strong></h4>
-                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 10px;">Av. Ana Beatriz Bierrembach, N° 165</h5>
-                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Vila Mimosa - Campinas/SP - 13050-060</h5>
-                                <h5 style="color: #333; font-family: 'Material Design Icons', sans-serif; font-size: 14px; margin-top: 5px;">Telefones: (19) 3269-9922 / (19) 3308-7006</h5>
-                            </div>
-                            <div class="col-md-4 text-md-right">
-                                <ul class="social-list">
-                                    <li><a class="" href="#"><img src="~/images/Imagess/facebook-icon-free-png.webp" width="40" height="40" /></a></li>
-                                    <li><a class="" href="#"><img src="~/images/Imagess/instagram-icon-free-png.webp" width="40" height="40" /></a></li>
-                                    <li><a class="" href="#"><img src="~/images/Imagess/69edfa1f-3eb0-4bb3-80ef-20bcbda58427.png" width="39" height="39" /></a></li>
-                                </ul>
-                            </div>
+            <!--Parceiros-->
+            <section class="section section-lg ">
+                <div class="text-center">
+                    <h2 style="color: #000; font-family: Poppins">Parceiros</h2>
+                </div>
+                <br />
+                <br />
+                <div class="partners-section">
+                    <img src="~/images/Imagess/parceiros1-removebg-preview.png" alt="Parceiro 1">
+                    <img src="~/images/Imagess/parceiros2-removebg-preview.png" alt="Parceiro 2">
+                    <img src="~/images/Imagess/parceiros3-removebg-preview.png" alt="Parceiro 3">
+                </div>
+                <br />
+                <br />
+                <div style="text-align: center">
+                    <a class="btn btn-primary" asp-controller="QuemSomos" asp-action="Parceiros">Saiba Mais</a>
+                </div>
+            </section>
+        </div>
+        <!-- Page Footer-->
+        <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">
+            <div class="container wow-outer">
+                <div class="wow fadeIn">
+                    <div class="row row-60 align-items-center">
+                        <div class="col-md-4">
+                            <a href="/"><img src="~/images/Imagess/logo.png" alt="" width="140" height="57" srcset="~/images/Imagess/logo.png 2x" /></a>
+                        </div>
+                        <div class="col-md-4">
+                            <h4 style="color: #000; font-family: Poppins"><strong>Localização</strong></h4>
+                            <h5 style="color: #333; font-family: Poppins; font-size: 14px; margin-top: 10px;">Av. Ana Beatriz Bierrembach, N° 165</h5>
+                            <h5 style="color: #333; font-family: Poppins; font-size: 14px; margin-top: 5px;">Vila Mimosa - Campinas/SP - 13050-060</h5>
+                            <h5 style="color: #333; font-family: Poppins; font-size: 14px; margin-top: 5px;">Telefones: (19) 3269-9922 / (19) 3308-7006</h5>
+                        </div>
+                        <div class="col-md-4 text-md-right">
+                            <p style="color: #333">Copyright © 2023. Todos os Direitos Reservados</p>
                         </div>
                     </div>
                 </div>
-            </footer>
-        </div>
+            </div>
+        </footer>
     </div>
     <div class="snackbars" id="form-output-global"></div>
     <script src="~/js/core.min.js"></script>
     <script src="~/js/script.js"></script>
+    <script src="~/js/JSL.js"></script>
 </body>
 </html>

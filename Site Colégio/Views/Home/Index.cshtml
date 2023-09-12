@@ -1,10 +1,9 @@
 ﻿@{
     ViewData["Title"] = "Index";
 }
-
 <!DOCTYPE html>
-<html class="wide wow-animation" lang="pt-br"> 
-  <head>
+<html class="wide wow-animation" lang="pt-br">
+<head>
     <title>Colégio Jardin's</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
@@ -16,46 +15,57 @@
     <link rel="stylesheet" href="~/css/fonts.css">
     <link rel="stylesheet" href="~/css/style.css">
     <link rel="stylesheet" type="text/css" href="~/css/Styless.css">
-    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
     <style>
-    .rd-navbar {
-      /* Defina o fundo inicial como transparente */
-      background: transparent;
-      /* Adicione a propriedade de transição para a opacidade do pseudo-elemento */
-      transition: opacity 0.3s ease;
-      /* Defina a posição do pseudo-elemento para cobrir toda a navbar */
-      position: relative;
-    }
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
 
-    /* Crie um pseudo-elemento para o fundo gradiente */
-    .rd-navbar::before {
-      /* Posicione o pseudo-elemento atrás do conteúdo */
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      /* Defina a opacidade inicial como 0 para torná-lo transparente */
-      opacity: 0;
-      /* Aplique o gradiente linear ao pseudo-elemento */
+        html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {
+            display: block;
+        }</style>
+    <style>
+        .rd-navbar {
+            /* Defina o fundo inicial como transparente */
+            background: transparent;
+            /* Adicione a propriedade de transição para a opacidade do pseudo-elemento */
+            transition: opacity 0.3s ease;
+            /* Defina a posição do pseudo-elemento para cobrir toda a navbar */
+            position: relative;
+        }
+            /* Crie um pseudo-elemento para o fundo gradiente */
+            .rd-navbar::before {
+                /* Posicione o pseudo-elemento atrás do conteúdo */
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                /* Defina a opacidade inicial como 0 para torná-lo transparente */
+                opacity: 0;
+                /* Aplique o gradiente linear ao pseudo-elemento */
                 background: linear-gradient(120deg, #f9dc03, #a6a557, #536fab, #0038ff);
-      /* Defina o z-index como -1 para garantir que ele fique atrás do conteúdo */
-      z-index: -1;
-      /* Adicione a propriedade de transição para a opacidade do pseudo-elemento */
-      transition: opacity 0.3s ease;
-    }
-
-    /* Aplique o fundo gradiente quando houver scroll */
-    .rd-navbar.scrolled {
+                /* Defina o z-index como -1 para garantir que ele fique atrás do conteúdo */
+                z-index: -1;
+                /* Adicione a propriedade de transição para a opacidade do pseudo-elemento */
+                transition: opacity 0.3s ease;
+            }
+            /* Aplique o fundo gradiente quando houver scroll */
+            .rd-navbar.scrolled {
                 background: linear-gradient(120deg, #f9dc03, #a6a557, #536fab, #0038ff);
-    }
-
-    /* Exiba o pseudo-elemento com o gradiente quando houver scroll */
-    .rd-navbar.scrolled::before {
-      opacity: 1;
-    }
-  </style>
+            }
+                /* Exiba o pseudo-elemento com o gradiente quando houver scroll */
+                .rd-navbar.scrolled::before {
+                    opacity: 1;
+                }
+    </style>
     <style>
         .image-container {
             display: flex;
@@ -119,27 +129,27 @@
             text-align: left;
         }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <script>
-    window.addEventListener("scroll", function () {
-      var navbar = document.querySelector(".rd-navbar");
-      var scrolled = window.scrollY > 46;
-      // Adicione ou remova a classe "scrolled" para acionar a transição
-      if (scrolled) {
-        navbar.classList.add("scrolled");
-      } else {
-        navbar.classList.remove("scrolled");
-      }
-    });
-  </script>
+        window.addEventListener("scroll", function () {
+            var navbar = document.querySelector(".rd-navbar");
+            var scrolled = window.scrollY > 46;
+            // Adicione ou remova a classe "scrolled" para acionar a transição
+            if (scrolled) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        });
+    </script>
     <div class="preloader">
-      <div class="preloader-body">
-        <div class="cssload-container">
-          <div class="cssload-speeding-wheel"></div>
+        <div class="preloader-body">
+            <div class="cssload-container">
+                <div class="cssload-speeding-wheel"></div>
+            </div>
+            <p>Carregando...</p>
         </div>
-        <p>Carregando...</p>
-      </div>
     </div>
     <div class="page">
         <!-- Page Header-->
@@ -168,9 +178,9 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Proposta">Proposta Pedagógica</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Parceiros">Parceiros</a>
-                                        <div class="dropdown-divider"></div>
                                         <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Diferencial">Diferencial</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" asp-controller="QuemSomos" asp-action="Parceiros">Parceiros</a>
                                     </div>
                                 </li>
                                 <!--Aba Cursos-->
@@ -304,7 +314,8 @@
                         </div>
                         <div class="col-lg-6">
                             <h2 style="font-family: Poppins">
-                                Sobre Nós</h2>
+                                Sobre Nós
+                            </h2>
                             <div class="text-with-divider text-left">
                                 <div class="divider"></div>
                                 <h4>Oferecemos um grande aprendizado em um ambiente amigável e tranquilo.</h4>
@@ -318,18 +329,17 @@
                     </div>
                 </div>
             </section>
-        </div>
-        <!--Diferencial-->
-        <section class="section section-lg">
+            <!--Diferencial-->
+            <section class="section section-lg">
             <div class="container">
                 <h2 class="text-center" style="color: #000; font-family: Poppins">Nossos Diferenciais</h2>
                 <div class="row row-30 row-md-60">
                     <div class="col-md-6 col-lg-4">
                         <div class="box-icon-modern">
-                            <div class="box-icon-inner"><img src="~/images/Imagess/adesivo.jpg" width="250" height="250"/></div>
+                            <div class="box-icon-inner"><img src="~/images/Imagess/adesivo.jpg" width="250" height="250" /></div>
                             <div class="box-icon-caption">
-                                <h4 style="color: #000; font-family: Arial;">Programa Fidelidade</h4>
-                                <p>Nosso Colégio oferece um Programa de Fidelidade com descontos progressivos para os responsáveis que mantêm as mensalidades em dia.</p>
+                                <h4 style="color: #000; font-family: Poppins;">Programa Fidelidade</h4>
+                                <p style=" font-family: Poppins">Nosso Colégio oferece um Programa de Fidelidade com descontos progressivos para os responsáveis que mantêm as mensalidades em dia.</p>
                             </div>
                         </div>
                     </div>
@@ -337,286 +347,297 @@
                         <div class="box-icon-modern">
                             <div class="box-icon-inner"><img src="~/images/Imagess/9-removebg-preview.png" width="400" height="400" /></div>
                             <div class="box-icon-caption">
-                                <h4 style="color: #000; font-family: Arial;">Kung-Fu</h4>
-                                <p>Oferecemos aulas de Kung-fu para alunos da educação infantil e ensino fundamental I do período integral. As aulas incluem dinâmicas, jogos e debates dentro do conteúdo da arte marcial, visando o desenvolvimento de habilidades físicas, motoras, psicoativas e cognitivas</p>
+                                <h4 style="color: #000; font-family: Poppins;">Kung-Fu</h4>
+                                <p style=" font-family: Poppins">Oferecemos aulas de Kung-fu para alunos da educação infantil e ensino fundamental I do período integral. As aulas incluem dinâmicas, jogos e debates dentro do conteúdo da arte marcial, visando o desenvolvimento de habilidades físicas, motoras, psicoativas e cognitivas</p>
                             </div>
                         </div>
                     </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/7-removebg-preview.png" width="130" height="130" /></div>
-                                <div class="box-icon-caption">
-                                    <h4 style="color: #000; font-family: Arial;">Atendimento Psicológico</h4>
-                                    <p>Nosso Colégio possui Atendimento Psicológico tanto para alunos quanto professores;</p>
-                                </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box-icon-modern">
+                            <div class="box-icon-inner"><img src="~/images/Imagess/7-removebg-preview.png" width="130" height="130" /></div>
+                            <div class="box-icon-caption">
+                                <h4 style="color: #000; font-family: Poppins;">Atendimento Psicológico</h4>
+                                <p style=" font-family: Poppins">Nosso Colégio possui Atendimento Psicológico tanto para alunos quanto professores;</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/8-removebg-preview.png" width="200" height="200" /></div>
-                                <div class="box-icon-caption">
-                                    <h4 style="color: #000; font-family: Arial;">Aulas de Yoga</h4>
-                                    <p>Nosso Colégio possui aulas de Yoga para os Pais e responsáveis, a fim de proporcionar momentos de relaxamento e prática de esportes.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box-icon-modern">
+                            <div class="box-icon-inner"><img src="~/images/Imagess/8-removebg-preview.png" width="200" height="200" /></div>
+                            <div class="box-icon-caption">
+                                <h4 style="color: #000; font-family: Poppins;">Aulas de Yoga</h4>
+                                <p style=" font-family: Poppins">Nosso Colégio possui aulas de Yoga para os Pais e responsáveis, a fim de proporcionar momentos de relaxamento e prática de esportes.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/6-removebg-preview.png" width="300" height="300" /></div>
-                                <div class="box-icon-caption">
-                                    <h4 style="color: #000; font-family: Arial;">Fanfarra</h4>
-                                    <p>Temos aulas de Fanfarra para alunos do Ensino Fundamental I até o Ensino Médio, visando desenvolver noções de espaço, tempo, ritmo, coordenação e expressão motora, além de promover a integração e socialização dos alunos.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box-icon-modern">
+                            <div class="box-icon-inner"><img src="~/images/Imagess/6-removebg-preview.png" width="300" height="300" /></div>
+                            <div class="box-icon-caption">
+                                <h4 style="color: #000; font-family: Poppins;">Fanfarra</h4>
+                                <p style=" font-family: Poppins">Temos aulas de Fanfarra para alunos do Ensino Fundamental I até o Ensino Médio, visando desenvolver noções de espaço, tempo, ritmo, coordenação e expressão motora, além de promover a integração e socialização dos alunos.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/10-removebg-preview.png" width="300" height="300" /></div>
-                                <div class="box-icon-caption">
-                                    <h4 style="color: #000; font-family: Arial;">Aulas de Teatro</h4>
-                                    <p>Nosso Colégio Possui aulas de teatro para alunos da Educação Infantil até o Ensino médio, a fim de desenvolver habilidades cognitivas, sociais, emocionais e físicas.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box-icon-modern">
+                            <div class="box-icon-inner"><img src="~/images/Imagess/10-removebg-preview.png" width="300" height="300" /></div>
+                            <div class="box-icon-caption">
+                                <h4 style="color: #000; font-family: Poppins;">Aulas de Teatro</h4>
+                                <p style=" font-family: Poppins">Nosso Colégio Possui aulas de teatro para alunos da Educação Infantil até o Ensino médio, a fim de desenvolver habilidades cognitivas, sociais, emocionais e físicas.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/13-removebg-preview.png" width="400" height="400" /></div>
-                                <div class="box-icon-caption">
-                                    <h4 style="color: #000; font-family: Arial;">Projeto de Vida e Empreendedorismo</h4>
-                                    <p>A disciplina Projeto de Vida Empreendedorismo ensina competências socioemocionais como autoconhecimento, inteligência emocional e colaboração. Disponível do 1º ano do Ensino Fundamental ao Ensino Médio, acompanha o aluno desde o começo até as escolhas de carreira e planos futuros.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box-icon-modern">
+                            <div class="box-icon-inner"><img src="~/images/Imagess/13-removebg-preview.png" width="400" height="400" /></div>
+                            <div class="box-icon-caption">
+                                <h4 style="color: #000; font-family: Poppins;">Projeto de Vida e Empreendedorismo</h4>
+                                <p style=" font-family: Poppins">A disciplina Projeto de Vida Empreendedorismo ensina competências socioemocionais como autoconhecimento, inteligência emocional e colaboração. Disponível do 1º ano do Ensino Fundamental ao Ensino Médio, acompanha o aluno desde o começo até as escolhas de carreira e planos futuros.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/11-removebg-preview.png" width="150" height="150" /></div>
-                                <div class="box-icon-caption">
-                                    <h4 style="color: #000; font-family: Arial;">Bibliotecas</h4>
-                                    <p>Possuímosem nosso Colégio Bibliotecas completas e equipada com muitos títulos.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box-icon-modern">
+                            <div class="box-icon-inner"><img src="~/images/Imagess/11-removebg-preview.png" width="150" height="150" /></div>
+                            <div class="box-icon-caption">
+                                <h4 style="color: #000; font-family: Poppins;">Bibliotecas</h4>
+                                <p style=" font-family: Poppins">Possuímosem nosso Colégio Bibliotecas completas e equipada com muitos títulos.</p>
                             </div>
                         </div>
-                        <div class="col-md-6 col-lg-4">
-                            <div class="box-icon-modern">
-                                <div class="box-icon-inner"><img src="~/images/Imagess/12-removebg-preview.png" width="150" height="150" /></div>
-                                <div class="box-icon-caption">
-                                    <h4 style="color: #000; font-family: Arial;">Laboratórios</h4>
-                                    <p>Possuímos em nosso Colégio Laboratórios de Química, com equipamentos completos.</p>
-                                </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="box-icon-modern">
+                            <div class="box-icon-inner"><img src="~/images/Imagess/12-removebg-preview.png" width="150" height="150" /></div>
+                            <div class="box-icon-caption">
+                                <h4 style="color: #000; font-family: Poppins;">Laboratórios</h4>
+                                <p style=" font-family: Poppins">Possuímos em nosso Colégio Laboratórios de Química, com equipamentos completos.</p>
                             </div>
                         </div>
-                </div>
-                    <br />
-                    <div style="text-align: center;">
-                        <a class="btn btn-primary" asp-controller="QuemSomos" asp-action="Diferencial">Saiba Mais</a>
                     </div>
                 </div>
-            </section>
-        <!--Fotos Infraestrutura-->
-        <section class="section section-lg">
-            <h2 style="text-align: center; width: 100% ; color: #000; font-family: Poppins">Nossa Infraestrutura</h2>
-        <div class="row isotope-wrap">
-          <!-- Galeria-->
-          <div class="col-lg-12">
-            <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group" data-lg-thumbnail="false">
-              <div class="row no-gutters row-condensed">
-                 <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3">
-                  <div class="wow fadeInUp">
-                    <div class="gallery-item-classic"><img src="~/images/Infra/DSC08499.JPG" alt="" width="960" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="~/images/Infra/DSC08499.JPG" data-lightgallery="item">zoom</a></div>
-                    </div>
-                  </div>
+                <br />
+                <div style="text-align: center;">
+                    <a class="btn btn-primary" asp-controller="QuemSomos" asp-action="Diferencial">Saiba Mais</a>
                 </div>
-                <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2">
-                  <div class="wow fadeInUp">
-                    <div class="gallery-item-classic"><img src="~/images/Infra/PredioFrentePraça.JPG" alt="" width="960" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="~/images/Infra/PredioFrentePraça.JPG" data-lightgallery="item">zoom</a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*">
-                  <div class="wow slideInDown">
-                    <div class="gallery-item-classic"><img src="~/images/Infra/FrenteFund1.JPG" alt="" width="640" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3">
-                  <div class="wow slideInDown">
-                    <div class="gallery-item-classic"><img src="~/images/Infra/FrenteInfantil.JPG" alt="" width="640" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteInfantil.JPG" data-lightgallery="item">zoom</a></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-md-4 isotope-item wow-outer" data-filter="Category 3">
-                  <div class="wow slideInDown">
-                    <div class="gallery-item-classic"><img src="~/images/Infra/DSC09553.JPG" alt="" width="640" height="429"/>
-                      <div class="gallery-item-classic-caption"><a href="~/images/Infra/DSC09553.JPG" data-lightgallery="item">zoom</a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
-        </div>
-      </section>
-      <!--Depoimentos-->
-            <section class="parallax-container" data-parallax-img="images/Imagess/banner2.PNG">
-                <div class="parallax-content section-xl context-dark text-center bg-dark-filter bg-dark-filter-2">
-                    <div class="container">
-                        <h2 style="font-family: Poppins">Depoimentos</h2>
-                        <!-- Slick Carousel-->
-                        <div class="slick-slider carousel-parent slick-style-1" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
-                            <div class="item">
-                                <div class="testimonials-modern">
-                                    <div class="testimonials-modern-text">
-                                        <p>A falsis, hibrida peritus fiscina. Devatio de fortis era, talem abaculus! Urbs germanus abnoba est. Pol, a bene exemplar, victrix! Peritus verpas ducunt ad byssus. Cum historia persuadere, omnes decores.</p>
+        </section>
+            <!--Fotos Infraestrutura-->
+            <section class="section section-lg">
+            <h2 style="text-align: center; width: 100% ; color: #000; font-family: Poppins">Nossa Infraestrutura</h2>
+            <div class="row isotope-wrap">
+                <!-- Galeria-->
+                <div class="col-lg-12">
+                    <div class="isotope" data-isotope-layout="fitRows" data-isotope-group="gallery" data-lightgallery="group" data-lg-thumbnail="false">
+                        <div class="row no-gutters row-condensed">
+                            <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 3">
+                                <div class="wow fadeInUp">
+                                    <div class="gallery-item-classic">
+                                        <img src="~/images/Infra/DSC08499.JPG" alt="" width="960" height="429" />
+                                        <div class="gallery-item-classic-caption"><a href="~/images/Infra/DSC08499.JPG" data-lightgallery="item">zoom</a></div>
                                     </div>
-                                    <div class="testimonials-modern-name">Joanna Smith</div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="testimonials-modern">
-                                    <div class="testimonials-modern-text">
-                                        <p>Silvas cadunt in magnum antverpia! Ubi est grandis gabalium? Trabem sapienter ducunt ad dexter hydra. Devatios sunt assimilatios de alter ignigena. Est ferox lapsus, cesaris. Cum abactus tolerare, omnes.</p>
+                            <div class="col-12 col-sm-12 col-md-6 isotope-item wow-outer" data-filter="Category 2">
+                                <div class="wow fadeInUp">
+                                    <div class="gallery-item-classic">
+                                        <img src="~/images/Infra/PredioFrentePraça.JPG" alt="" width="960" height="429" />
+                                        <div class="gallery-item-classic-caption"><a href="~/images/Infra/PredioFrentePraça.JPG" data-lightgallery="item">zoom</a></div>
                                     </div>
-                                    <div class="testimonials-modern-name">James Williams</div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="testimonials-modern">
-                                    <div class="testimonials-modern-text">
-                                        <p>Pius equiso virtualiter promissios fides est. Cur absolutio peregrinatione? Decors congregabo in salvus cubiculum! Raptus, fidelis ventuss etiam prensionem de neuter, audax classis. Domesticus, camerarius aonid.</p>
+                            <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="*">
+                                <div class="wow slideInDown">
+                                    <div class="gallery-item-classic">
+                                        <img src="~/images/Infra/FrenteFund1.JPG" alt="" width="640" height="429" />
+                                        <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteFund1.JPG" data-lightgallery="item">zoom</a></div>
                                     </div>
-                                    <div class="testimonials-modern-name">Kate McMillan</div>
                                 </div>
                             </div>
-                            <div class="item">
-                                <div class="testimonials-modern">
-                                    <div class="testimonials-modern-text">
-                                        <p>Danistas sunt cannabiss de brevis domus. Vae, domina! Brodium cresceres, tanquam ferox repressor. Glutens potus, tanquam brevis nuptia. Fraticinida, ionicis tormento, et pars. Cum bromium resistere, omnes.</p>
+                            <div class="col-12 col-sm-6 col-md-4 isotope-item wow-outer" data-filter="Category 3">
+                                <div class="wow slideInDown">
+                                    <div class="gallery-item-classic">
+                                        <img src="~/images/Infra/FrenteInfantil.JPG" alt="" width="640" height="429" />
+                                        <div class="gallery-item-classic-caption"><a href="~/images/Infra/FrenteInfantil.JPG" data-lightgallery="item">zoom</a></div>
                                     </div>
-                                    <div class="testimonials-modern-name">Peter Wilson</div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slick-slider slider-dots" id="child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-xl-items="4" data-slide-to-scroll="1">
-                            <div class="item">
-                                <div class="slick-dot-item">
-                                    <img src="~/images/user-1-60x60.jpg" alt="" width="60" height="60" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="slick-dot-item">
-                                    <img src="~/images/user-2-60x60.jpg" alt="" width="60" height="60" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="slick-dot-item">
-                                    <img src="~/images/user-3-60x60.jpg" alt="" width="60" height="60" />
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="slick-dot-item">
-                                    <img src="~/images/user-4-60x60.jpg" alt="" width="60" height="60" />
+                            <div class="col-12 col-md-4 isotope-item wow-outer" data-filter="Category 3">
+                                <div class="wow slideInDown">
+                                    <div class="gallery-item-classic">
+                                        <img src="~/images/Infra/DSC09553.JPG" alt="" width="640" height="429" />
+                                        <div class="gallery-item-classic-caption"><a href="~/images/Infra/DSC09553.JPG" data-lightgallery="item">zoom</a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
+            <!--Depoimentos-->
+            <section class="parallax-container" data-parallax-img="images/Imagess/banner2.PNG">
+            <div class="parallax-content section-xl context-dark text-center bg-dark-filter bg-dark-filter-2">
+                <div class="container">
+                    <h2 style="font-family: Poppins">Depoimentos</h2>
+                    <!-- Slick Carousel-->
+                    <div class="slick-slider carousel-parent slick-style-1" data-arrows="true" data-loop="false" data-dots="false" data-swipe="true" data-items="1" data-child="#child-carousel" data-for="#child-carousel">
+                        <div class="item">
+                            <div class="testimonials-modern">
+                                <div class="testimonials-modern-text">
+                                    <p>A falsis, hibrida peritus fiscina. Devatio de fortis era, talem abaculus! Urbs germanus abnoba est. Pol, a bene exemplar, victrix! Peritus verpas ducunt ad byssus. Cum historia persuadere, omnes decores.</p>
+                                </div>
+                                <div class="testimonials-modern-name">Joanna Smith</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-modern">
+                                <div class="testimonials-modern-text">
+                                    <p>Silvas cadunt in magnum antverpia! Ubi est grandis gabalium? Trabem sapienter ducunt ad dexter hydra. Devatios sunt assimilatios de alter ignigena. Est ferox lapsus, cesaris. Cum abactus tolerare, omnes.</p>
+                                </div>
+                                <div class="testimonials-modern-name">James Williams</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-modern">
+                                <div class="testimonials-modern-text">
+                                    <p>Pius equiso virtualiter promissios fides est. Cur absolutio peregrinatione? Decors congregabo in salvus cubiculum! Raptus, fidelis ventuss etiam prensionem de neuter, audax classis. Domesticus, camerarius aonid.</p>
+                                </div>
+                                <div class="testimonials-modern-name">Kate McMillan</div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimonials-modern">
+                                <div class="testimonials-modern-text">
+                                    <p>Danistas sunt cannabiss de brevis domus. Vae, domina! Brodium cresceres, tanquam ferox repressor. Glutens potus, tanquam brevis nuptia. Fraticinida, ionicis tormento, et pars. Cum bromium resistere, omnes.</p>
+                                </div>
+                                <div class="testimonials-modern-name">Peter Wilson</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slick-slider slider-dots" id="child-carousel" data-for=".carousel-parent" data-arrows="false" data-loop="false" data-dots="false" data-swipe="true" data-items="4" data-xs-items="4" data-sm-items="4" data-md-items="4" data-lg-items="4" data-xl-items="4" data-slide-to-scroll="1">
+                        <div class="item">
+                            <div class="slick-dot-item">
+                                <img src="~/images/user-1-60x60.jpg" alt="" width="60" height="60" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slick-dot-item">
+                                <img src="~/images/user-2-60x60.jpg" alt="" width="60" height="60" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slick-dot-item">
+                                <img src="~/images/user-3-60x60.jpg" alt="" width="60" height="60" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="slick-dot-item">
+                                <img src="~/images/user-4-60x60.jpg" alt="" width="60" height="60" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
             <!--Noticias-->
             <section class="section section-lg ">
-                <div class="container wow-outer">
-                    <h2 class="text-center wow slideInDown" style="color: #000; font-family: Poppins">Eventos Anuais</h2>
-                    <!-- Owl Carousel-->
-                    <div class="owl-carousel wow fadeInUp" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-stage-padding="15" data-loop="false" data-margin="30" data-mouse-drag="false">
-                        <div class="post-corporate">
-                            <img src="~/images/user-1-60x60.jpg" width="200" height="200" />
-                            <h4 class="post-corporate-title">Curso de Férias</h4>
-                            <div class="post-corporate-text">
-                                <p>Aqui no Colégio possuimos para nossos alunos do Período Integral...</p>
-                            </div>
-                        </div>
-                        <div class="post-corporate">
-                            <img src="~/images/user-1-60x60.jpg" width="200" height="200" />
-                            <h4 class="post-corporate-title">Festa das Nações</h4>
-                            <div class="post-corporate-text">
-                                <p>Aqui no Colégio todos os anos é realizado...</p>
-                            </div>
-                        </div>
-                        <div class="post-corporate">
-                            <img src="~/images/user-1-60x60.jpg" width="200" height="200" />
-                            <h4 class="post-corporate-title">Curso de Férias</h4>
-                            <div class="post-corporate-text">
-                                <p>Aqui no Colégio possuimos para nossos alunos do Período Integral...</p>
-                            </div>
-                        </div>
-                        <div class="post-corporate">
-                            <a class="badge" href="#">Aug 15, 2019</a>
-                            <h4 class="post-corporate-title"><a href="#">Making Gelato Like a True Italian: Tips From Our Chef</a></h4>
-                            <div class="post-corporate-text">
-                                <p>Most would agree that gelato is the most delicious frozen dessert; the perfect ending to any meal. With origins in Sicily, gelato has been made famous...</p>
-                            </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                        </div>
-                        <div class="post-corporate">
-                            <a class="badge" href="#">Sep 15, 2019</a>
-                            <h4 class="post-corporate-title"><a href="#">Italian Ingredients You Can Easily Grow at Home</a></h4>
-                            <div class="post-corporate-text">
-                                <p>Imagine preparing an Italian dinner but having to stop cooking because you forget an ingredient and must run to the store. How nice would it be to go...</p>
-                            </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                        </div>
-                        <div class="post-corporate">
-                            <a class="badge" href="#">Sep 28, 2019</a>
-                            <h4 class="post-corporate-title"><a href="#">Our Brief Guide to Pairing Wine and Pasta the Right Way</a></h4>
-                            <div class="post-corporate-text">
-                                <p>To Italians, pasta is the food of the gods, and there is nothing better to go with a good pasta than a perfect wine. To the uninitiated, finding the right...</p>
-                            </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                        </div>
-                        <div class="post-corporate">
-                            <a class="badge" href="#">Oct 05, 2019</a>
-                            <h4 class="post-corporate-title"><a href="#">Top 10 Famous Spring Dishes in Italian Restaurants</a></h4>
-                            <div class="post-corporate-text">
-                                <p>Spring is the time for growth and rebirth. One can see this throughout the countrysides of Italy with blooming flowers and budding trees. Springtime is...</p>
-                            </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                        </div>
-                        <div class="post-corporate">
-                            <a class="badge" href="#">Oct 17, 2019</a>
-                            <h4 class="post-corporate-title"><a href="#">What Makes Some Seasonings Truly Italian?</a></h4>
-                            <div class="post-corporate-text">
-                                <p>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</p>
-                            </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
-                        </div>
-                        <div class="post-corporate">
-                            <a class="badge" href="#">Nov 10, 2019</a>
-                            <h4 class="post-corporate-title"><a href="#">Types of Italian Sausage and Why They Are Different</a></h4>
-                            <div class="post-corporate-text">
-                                <p>There are many types of Italian sausage. The main difference in Italian sausage when compared to other sausages is the seasoning. The particular...</p>
-                            </div><a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+            <div class="container wow-outer">
+                <h2 class="text-center wow slideInDown" style="color: #000; font-family: Poppins">Eventos Anuais</h2>
+                <!-- Owl Carousel-->
+                <div class="owl-carousel wow fadeInUp" data-items="1" data-md-items="2" data-lg-items="3" data-dots="true" data-nav="false" data-stage-padding="15" data-loop="false" data-margin="30" data-mouse-drag="false">
+                    <div class="post-corporate">
+                        <img src="~/images/user-1-60x60.jpg" width="200" height="200" />
+                        <h4 class="post-corporate-title" style=" font-family: Poppins">Curso de Férias</h4>
+                        <div class="post-corporate-text">
+                            <p style=" font-family: Poppins">Aqui no Colégio possuimos para nossos alunos do Período Integral...</p>
                         </div>
                     </div>
+                    <div class="post-corporate">
+                        <img src="~/images/user-1-60x60.jpg" width="200" height="200" />
+                        <h4 class="post-corporate-title" style=" font-family: Poppins">Festa das Nações</h4>
+                        <div class="post-corporate-text">
+                            <p style=" font-family: Poppins">Aqui no Colégio todos os anos é realizado...</p>
+                        </div>
+                    </div>
+                    <div class="post-corporate">
+                        <img src="~/images/user-1-60x60.jpg" width="200" height="200" />
+                        <h4 class="post-corporate-title" style=" font-family: Poppins">Curso de Férias</h4>
+                        <div class="post-corporate-text">
+                            <p style=" font-family: Poppins">Aqui no Colégio possuimos para nossos alunos do Período Integral...</p>
+                        </div>
+                    </div>
+                    <div class="post-corporate">
+                        <a class="badge" href="#">Aug 15, 2019</a>
+                        <h4 class="post-corporate-title"><a href="#">Making Gelato Like a True Italian: Tips From Our Chef</a></h4>
+                        <div class="post-corporate-text">
+                            <p>Most would agree that gelato is the most delicious frozen dessert; the perfect ending to any meal. With origins in Sicily, gelato has been made famous...</p>
+                        </div>
+                        <a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+                    </div>
+                    <div class="post-corporate">
+                        <a class="badge" href="#">Sep 15, 2019</a>
+                        <h4 class="post-corporate-title"><a href="#">Italian Ingredients You Can Easily Grow at Home</a></h4>
+                        <div class="post-corporate-text">
+                            <p>Imagine preparing an Italian dinner but having to stop cooking because you forget an ingredient and must run to the store. How nice would it be to go...</p>
+                        </div>
+                        <a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+                    </div>
+                    <div class="post-corporate">
+                        <a class="badge" href="#">Sep 28, 2019</a>
+                        <h4 class="post-corporate-title"><a href="#">Our Brief Guide to Pairing Wine and Pasta the Right Way</a></h4>
+                        <div class="post-corporate-text">
+                            <p>To Italians, pasta is the food of the gods, and there is nothing better to go with a good pasta than a perfect wine. To the uninitiated, finding the right...</p>
+                        </div>
+                        <a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+                    </div>
+                    <div class="post-corporate">
+                        <a class="badge" href="#">Oct 05, 2019</a>
+                        <h4 class="post-corporate-title"><a href="#">Top 10 Famous Spring Dishes in Italian Restaurants</a></h4>
+                        <div class="post-corporate-text">
+                            <p>Spring is the time for growth and rebirth. One can see this throughout the countrysides of Italy with blooming flowers and budding trees. Springtime is...</p>
+                        </div>
+                        <a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+                    </div>
+                    <div class="post-corporate">
+                        <a class="badge" href="#">Oct 17, 2019</a>
+                        <h4 class="post-corporate-title"><a href="#">What Makes Some Seasonings Truly Italian?</a></h4>
+                        <div class="post-corporate-text">
+                            <p>When thinking of Italian cuisine, dishes like pasta enveloped in hearty sauces come to mind. Certain flavors seem to be found across the different...</p>
+                        </div>
+                        <a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+                    </div>
+                    <div class="post-corporate">
+                        <a class="badge" href="#">Nov 10, 2019</a>
+                        <h4 class="post-corporate-title"><a href="#">Types of Italian Sausage and Why They Are Different</a></h4>
+                        <div class="post-corporate-text">
+                            <p>There are many types of Italian sausage. The main difference in Italian sausage when compared to other sausages is the seasoning. The particular...</p>
+                        </div>
+                        <a class="post-corporate-link" href="#">Read more<span class="icon linearicons-arrow-right"></span></a>
+                    </div>
                 </div>
-            </section>
-
-      <!--Parceiros-->
-        <section class="section section-lg ">
+            </div>
+        </section>
+            <!--Parceiros-->
+            <section class="section section-lg ">
             <div class="text-center">
                 <h2 style="color: #000; font-family: Poppins">Parceiros</h2>
-          </div>
-          <br />
-          <br />
-          <div class="partners-section">
-            <img src="~/images/Imagess/parceiros1-removebg-preview.png" alt="Parceiro 1">
-            <img src="~/images/Imagess/parceiros2-removebg-preview.png" alt="Parceiro 2">
-            <img src="~/images/Imagess/parceiros3-removebg-preview.png" alt="Parceiro 3">
-          </div>
-          <br />
-          <br />
-          <div style="text-align: center">
-            <a class="btn btn-primary" asp-controller="QuemSomos" asp-action="Parceiros">Saiba Mais</a>
-          </div>
+            </div>
+            <br />
+            <br />
+            <div class="partners-section">
+                <img src="~/images/Imagess/parceiros1-removebg-preview.png" alt="Parceiro 1">
+                <img src="~/images/Imagess/parceiros2-removebg-preview.png" alt="Parceiro 2">
+                <img src="~/images/Imagess/parceiros3-removebg-preview.png" alt="Parceiro 3">
+            </div>
+            <br />
+            <br />
+            <div style="text-align: center">
+                <a class="btn btn-primary" asp-controller="QuemSomos" asp-action="Parceiros">Saiba Mais</a>
+            </div>
         </section>
-      <!-- Page Footer-->
+        </div>
+        <!-- Page Footer-->
         <footer class="section footer-minimal context-dark" style="background: linear-gradient(125deg, #f9dc03, #efe95d, #9997f8, #0400ff); padding: 60px 0; text-align: left;">
             <div class="container wow-outer">
                 <div class="wow fadeIn">
@@ -642,5 +663,5 @@
     <script src="~/js/core.min.js"></script>
     <script src="~/js/script.js"></script>
     <script src="~/js/JSL.js"></script>
-  </body>
+</body>
 </html>

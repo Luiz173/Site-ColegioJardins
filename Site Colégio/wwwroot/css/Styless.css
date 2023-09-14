@@ -1,5 +1,4 @@
 ﻿
-
 .slider-container {
     overflow: hidden;
     position: relative;
@@ -55,9 +54,6 @@ i {
     z-index: 2;
 }
 
-
-
-
 .icon {
     background-color: transparent;
     border: none;
@@ -65,6 +61,9 @@ i {
     color: white;
     cursor: pointer;
 }
+
+
+
 /* Restante do estilo permanece igual */
 
 .contact-grid {

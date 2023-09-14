@@ -20,4 +20,11 @@ function nextSlide() {
     showSlide(slideIndex += 1);
 }
 
+function autoSlide() {
+    nextSlide();
+}
+
+// Configure o intervalo para trocar os slides automaticamente a cada 3 segundos (3000 milissegundos)
+setInterval(autoSlide, 8000);
+
 showSlide(slideIndex);
